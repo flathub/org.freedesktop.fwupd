@@ -14,10 +14,6 @@
     "--system-talk-name=org.freedesktop.fwupd",
     "--system-talk-name=org.freedesktop.UPower"
   ],
-  "build-options": {
-      "cflags": "-O2 -g",
-      "cxxflags": "-O2 -g"
-  },
   "cleanup": [
     "*.a",
     "*.la",
