@@ -165,6 +165,28 @@
       ]
     },
     {
+      "name": "libxmlb",
+      "buildsystem": "meson",
+      "config-opts": [
+        "-Dintrospection=false",
+        "-Dgtkdoc=false",
+        "-Dtests=false",
+        "-Dstemmer=false",
+        "--sysconfdir=/app/etc",
+        "--localstatedir=/var/data"
+      ],
+      "cleanup": [
+        "/libexec/xb-tool"
+      ],
+      "sources": [
+        {
+          "type": "archive",
+          "url": "https://people.freedesktop.org/~hughsient/releases/libxmlb-0.1.4.tar.xz",
+          "sha256": "ac6ed4b5410a3e16184fc2117ea85db2cf0cf47829e068e169a36f7dbe076cca"
+        }
+      ]
+    },
+    {
       "name": "fwupd",
       "buildsystem": "meson",
       "config-opts": [
@@ -211,8 +233,8 @@
       "sources": [
           {
               "type": "archive",
-              "url": "https://people.freedesktop.org/~hughsient/releases/fwupd-1.1.4.tar.xz",
-              "sha256": "80792f1b89707d6c383d9bbd83e7f50f486f960f51d34a25284979c9d365a666"
+              "url": "https://people.freedesktop.org/~hughsient/releases/fwupd-1.2.0.tar.xz",
+              "sha256": "6d2b91fddbcd1ea9a0c3a9c1867cac5580ac5c0deb9dabde63bba438f45a6f21"
           }
       ]
     }
