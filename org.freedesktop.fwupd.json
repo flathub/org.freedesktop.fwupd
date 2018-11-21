@@ -181,8 +181,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://people.freedesktop.org/~hughsient/releases/libxmlb-0.1.4.tar.xz",
-          "sha256": "ac6ed4b5410a3e16184fc2117ea85db2cf0cf47829e068e169a36f7dbe076cca"
+          "url": "https://people.freedesktop.org/~hughsient/releases/libxmlb-0.1.5.tar.xz",
+          "sha256": "88eb4d760d99f0cea17fcef4a148397474fd17cec1d3a9de507f6f2216b82b27"
         }
       ]
     },
