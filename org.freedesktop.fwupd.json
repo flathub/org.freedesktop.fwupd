@@ -120,7 +120,7 @@
       "sources": [
         {
           "type": "archive",
-          "url": "http://superb-dca2.dl.sourceforge.net/project/gnu-efi/gnu-efi-3.0.9.tar.bz2",
+          "url": "https://sourceforge.net/projects/gnu-efi/files/gnu-efi-3.0.9.tar.bz2",
           "sha256": "6715ea7eae1c7e4fc5041034bd3f107ec2911962ed284a081e491646b12277f0"
         }
       ]
