@@ -18,14 +18,17 @@
     "*.a",
     "*.la",
     "/include",
+    "/lib/debug",
     "/lib/girepository-1.0",
     "/lib/pkgconfig",
+    "/lib/python3.7",
     "/share/bash-completion",
     "/share/dbus-1/system-services",
     "/share/gir-1.0",
     "/share/gtk-doc",
     "/share/info",
     "/share/man",
+    "/share/vala",
     "/share/pkgconfig"
   ],
   "modules": [
@@ -183,6 +186,56 @@
           "type": "archive",
           "url": "https://people.freedesktop.org/~hughsient/releases/libxmlb-0.1.5.tar.xz",
           "sha256": "88eb4d760d99f0cea17fcef4a148397474fd17cec1d3a9de507f6f2216b82b27"
+        }
+      ]
+    },
+    {
+      "name": "libqmi",
+      "cleanup": [
+        "/bin",
+        "/libexec/qmi-proxy"
+      ],
+      "sources": [
+        {
+          "type": "archive",
+          "url": "https://www.freedesktop.org/software/libqmi/libqmi-1.20.2.tar.xz",
+          "sha256": "c73459ca8bfe1213f8047858d4946fc1f58e164d4f488a7a6904edee25e2ca44"
+        }
+      ]
+    },
+    {
+      "name": "libmbim",
+      "cleanup": [
+        "/bin"
+      ],
+      "sources": [
+        {
+          "type": "archive",
+          "url": "https://www.freedesktop.org/software/libmbim/libmbim-1.16.2.tar.xz",
+          "sha256": "eb494fee2c200daf4f5cc8a40061d24a3dfafe8c59151c95c6a826fd96dcb262"
+        }
+      ]
+    },
+    {
+      "name": "ModemManager",
+      "config-opts": [
+        "--without-udev",
+        "--with-udev-base-dir=/app/lib"
+      ],
+      "cleanup": [
+        "/bin/mmcli",
+        "/etc/dbus-1/system.d",
+        "/lib/ModemManager",
+        "/lib/rules.d",
+        "/sbin/ModemManager",
+        "/share/dbus-1/interfaces",
+        "/share/icons"
+      ],
+      "sources": [
+        {
+          "type": "archive",
+          "url": "https://www.freedesktop.org/software/ModemManager/ModemManager-1.8.2.tar.xz",
+          "sha256": "96f2a5f0ed15532b4c4c185b756fdc0326e7c2027cea26a1264f91e098260f80"
         }
       ]
     },
