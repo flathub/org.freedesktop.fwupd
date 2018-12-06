@@ -78,8 +78,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://github.com/rhboot/efivar/releases/download/35/efivar-35.tar.bz2",
-          "sha256": "1e033dc5d099a44fd473b0887dbcc4b105613efab0fb3c5df9f111ea5d147394"
+          "url": "https://github.com/rhboot/efivar/releases/download/37/efivar-37.tar.bz2",
+          "sha256": "3c67feb93f901b98fbb897d5ca82931a6698b5bcd6ac34f0815f670d77747b9f"
         }
       ]
     },
