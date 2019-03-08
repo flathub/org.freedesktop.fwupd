@@ -220,6 +220,7 @@
       "name": "ModemManager",
       "config-opts": [
         "--without-udev",
+        "--with-systemdsystemunitdir=/app/lib/systemd",
         "--with-udev-base-dir=/app/lib"
       ],
       "cleanup": [
@@ -227,6 +228,7 @@
         "/etc/dbus-1/system.d",
         "/lib/ModemManager",
         "/lib/rules.d",
+        "/lib/systemd",
         "/sbin/ModemManager",
         "/share/dbus-1/interfaces",
         "/share/icons"
