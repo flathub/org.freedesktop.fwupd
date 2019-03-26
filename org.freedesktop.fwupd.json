@@ -184,8 +184,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://people.freedesktop.org/~hughsient/releases/libxmlb-0.1.7.tar.xz",
-          "sha256": "616cdc448db2a213e0298b8c4d0a0eb3056bc927fba364c107a9f0d3c8cd364b"
+          "url": "https://people.freedesktop.org/~hughsient/releases/libxmlb-0.1.8.tar.xz",
+          "sha256": "14a728c375f6abfae70fadc7269ad6722ba960ed7c7616b54b5e0c99c804ec40"
         }
       ]
     },
@@ -198,8 +198,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://www.freedesktop.org/software/libqmi/libqmi-1.22.0.tar.xz",
-          "sha256": "21c198b481f1617bb7edb1960d823569de3e38b269dbf513af1b56048cafaa17"
+          "url": "https://www.freedesktop.org/software/libqmi/libqmi-1.22.2.tar.xz",
+          "sha256": "f1f1e514a89b1dcba05cf7274895e7301a2da4c947b7c2f17acb84fc74038227"
         }
       ]
     },
@@ -254,6 +254,7 @@
         "-Dpkcs7=false",
         "-Dsystemd=false",
         "-Dtests=false",
+        "-Dplugin_modem_manager=true",
         "-Defi-includedir=/app/include/efi",
         "-Defi-ldsdir=/app/lib",
         "-Defi-libdir=/app/lib",
@@ -294,8 +295,8 @@
       "sources": [
           {
               "type": "archive",
-              "url": "https://people.freedesktop.org/~hughsient/releases/fwupd-1.2.5.tar.xz",
-              "sha256": "056115790c95537fbaf5c348ea3d1ee8a3a005f55c2613fc83e6401c67faf920"
+              "url": "https://people.freedesktop.org/~hughsient/releases/fwupd-1.2.6.tar.xz",
+              "sha256": "36f53b652a0df9088c53311d0ab48dfff0b6cb79c56257fbd3034146b6979467"
           }
       ]
     }
