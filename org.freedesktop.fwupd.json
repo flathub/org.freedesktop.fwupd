@@ -198,8 +198,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://www.freedesktop.org/software/libqmi/libqmi-1.22.2.tar.xz",
-          "sha256": "f1f1e514a89b1dcba05cf7274895e7301a2da4c947b7c2f17acb84fc74038227"
+          "url": "https://www.freedesktop.org/software/libqmi/libqmi-1.22.4.tar.xz",
+          "sha256": "4c5b8e7bde4144ad875e9efaccd05bcc9b830c9a114df63aa2be8eb5d3caf9f1"
         }
       ]
     },
@@ -295,8 +295,8 @@
       "sources": [
           {
               "type": "archive",
-              "url": "https://people.freedesktop.org/~hughsient/releases/fwupd-1.2.6.tar.xz",
-              "sha256": "36f53b652a0df9088c53311d0ab48dfff0b6cb79c56257fbd3034146b6979467"
+              "url": "https://people.freedesktop.org/~hughsient/releases/fwupd-1.2.7.tar.xz",
+              "sha256": "c37ed23f7e89c2dc3670589b24c4f28ced7405ccee04f996a677ef5283e10cb9"
           }
       ]
     }
