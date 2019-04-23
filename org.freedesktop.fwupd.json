@@ -295,8 +295,8 @@
       "sources": [
           {
               "type": "archive",
-              "url": "https://people.freedesktop.org/~hughsient/releases/fwupd-1.2.7.tar.xz",
-              "sha256": "c37ed23f7e89c2dc3670589b24c4f28ced7405ccee04f996a677ef5283e10cb9"
+              "url": "https://people.freedesktop.org/~hughsient/releases/fwupd-1.2.8.tar.xz",
+              "sha256": "8c03a17b3de08d0de89902ac676c9c0ce66c14152e8798120c9669c044c17b61"
           }
       ]
     }
