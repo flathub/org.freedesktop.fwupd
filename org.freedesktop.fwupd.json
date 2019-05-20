@@ -297,6 +297,10 @@
               "type": "archive",
               "url": "https://people.freedesktop.org/~hughsient/releases/fwupd-1.2.9.tar.xz",
               "sha256": "65fedf85a3c518aa8c657321b2f854e207d6dd1e987cfd9eaf649f070d381da0"
+          },
+          {
+              "type": "patch",
+              "path": "0001-trivial-Fix-non-systemd-build.patch"
           }
       ]
     }
