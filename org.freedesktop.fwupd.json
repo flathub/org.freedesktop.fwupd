@@ -184,8 +184,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://people.freedesktop.org/~hughsient/releases/libxmlb-0.1.10.tar.xz",
-          "sha256": "2a177a066146e52d7c5db5132204e555edc1ea28728e2f2f91d629ac109abd2b"
+          "url": "https://people.freedesktop.org/~hughsient/releases/libxmlb-0.1.11.tar.xz",
+          "sha256": "2c0f7e235ccc9f946430ee3dab7214d957a07334f159c7aa6421b24792b5a7f7"
         }
       ]
     },
@@ -211,8 +211,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://www.freedesktop.org/software/libmbim/libmbim-1.18.0.tar.xz",
-          "sha256": "6cf40128d83d087946a7d8577e735526202e034d52f90047735329609097b282"
+          "url": "https://www.freedesktop.org/software/libmbim/libmbim-1.18.2.tar.xz",
+          "sha256": "7723f2ca2286c5286ffba7331cb4520099982e55355a7af6f45bdce6b5d39268"
         }
       ]
     },
@@ -236,8 +236,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://www.freedesktop.org/software/ModemManager/ModemManager-1.10.2.tar.xz",
-          "sha256": "bbcf6da35da3d72f688675bde91dfed6485845c3fedd1805ae914b71d1b783f2"
+          "url": "https://www.freedesktop.org/software/ModemManager/ModemManager-1.10.4.tar.xz",
+          "sha256": "fa556bb4ba1f1478e709b71151b4de8f7d136d80e51c64e887fc1fd8926cdc70"
         }
       ]
     },
@@ -295,12 +295,8 @@
       "sources": [
           {
               "type": "archive",
-              "url": "https://people.freedesktop.org/~hughsient/releases/fwupd-1.2.9.tar.xz",
-              "sha256": "65fedf85a3c518aa8c657321b2f854e207d6dd1e987cfd9eaf649f070d381da0"
-          },
-          {
-              "type": "patch",
-              "path": "0001-trivial-Fix-non-systemd-build.patch"
+              "url": "https://people.freedesktop.org/~hughsient/releases/fwupd-1.2.10.tar.xz",
+              "sha256": "4bee2032da8e3b690ecdc9a8a5662ea9b8287f72ba557758aa5321128f7ed646"
           }
       ]
     }
