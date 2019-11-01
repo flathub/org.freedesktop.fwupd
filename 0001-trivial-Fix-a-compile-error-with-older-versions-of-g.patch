@@ -1,0 +1,198 @@
+From f8b1138bfa4d8b6390bfe049ff1273dcc54b68fd Mon Sep 17 00:00:00 2001
+From: Richard Hughes <richard@hughsie.com>
+Date: Sat, 2 Nov 2019 07:17:56 +0000
+Subject: [PATCH] trivial: Fix a compile error with older versions of gudev
+
+Just move the G_DEFINE_AUTOPTR_CLEANUP_FUNC to the internal header to avoid
+forgetting to define this in each plugin.
+---
+ plugins/altos/fu-altos-device.c                         | 7 -------
+ plugins/ata/fu-ata-device.c                             | 7 -------
+ plugins/modem-manager/fu-mm-utils.c                     | 3 +++
+ plugins/modem-manager/fu-mm-utils.h                     | 8 --------
+ plugins/nvme/fu-nvme-device.c                           | 7 -------
+ plugins/thunderbolt-power/fu-plugin-thunderbolt-power.c | 7 -------
+ plugins/thunderbolt/fu-plugin-thunderbolt.c             | 7 -------
+ plugins/unifying/fu-unifying-runtime.c                  | 4 ----
+ src/fu-udev-device.c                                    | 7 -------
+ src/fu-udev-device.h                                    | 8 ++++++++
+ 10 files changed, 11 insertions(+), 54 deletions(-)
+
+diff --git a/plugins/altos/fu-altos-device.c b/plugins/altos/fu-altos-device.c
+index d5d249b9..403a5c89 100644
+--- a/plugins/altos/fu-altos-device.c
++++ b/plugins/altos/fu-altos-device.c
+@@ -27,13 +27,6 @@ struct _FuAltosDevice {
+ 
+ G_DEFINE_TYPE (FuAltosDevice, fu_altos_device, FU_TYPE_USB_DEVICE)
+ 
+-#ifndef HAVE_GUDEV_232
+-#pragma clang diagnostic push
+-#pragma clang diagnostic ignored "-Wunused-function"
+-G_DEFINE_AUTOPTR_CLEANUP_FUNC(GUdevClient, g_object_unref)
+-#pragma clang diagnostic pop
+-#endif
+-
+ static void
+ fu_altos_device_finalize (GObject *object)
+ {
+diff --git a/plugins/ata/fu-ata-device.c b/plugins/ata/fu-ata-device.c
+index d214cb28..1ec2dcb2 100644
+--- a/plugins/ata/fu-ata-device.c
++++ b/plugins/ata/fu-ata-device.c
+@@ -75,13 +75,6 @@ struct _FuAtaDevice {
+ 
+ G_DEFINE_TYPE (FuAtaDevice, fu_ata_device, FU_TYPE_UDEV_DEVICE)
+ 
+-#ifndef HAVE_GUDEV_232
+-#pragma clang diagnostic push
+-#pragma clang diagnostic ignored "-Wunused-function"
+-G_DEFINE_AUTOPTR_CLEANUP_FUNC(GUdevDevice, g_object_unref)
+-#pragma clang diagnostic pop
+-#endif
+-
+ guint8
+ fu_ata_device_get_transfer_mode (FuAtaDevice *self)
+ {
+diff --git a/plugins/modem-manager/fu-mm-utils.c b/plugins/modem-manager/fu-mm-utils.c
+index e543d03d..d39f0331 100644
+--- a/plugins/modem-manager/fu-mm-utils.c
++++ b/plugins/modem-manager/fu-mm-utils.c
+@@ -7,6 +7,9 @@
+ #include "config.h"
+ 
+ #include <gio/gio.h>
++
++#include "fu-udev-device.h"
++
+ #include "fu-mm-utils.h"
+ 
+ gboolean
+diff --git a/plugins/modem-manager/fu-mm-utils.h b/plugins/modem-manager/fu-mm-utils.h
+index c6c3eaa2..e0126337 100644
+--- a/plugins/modem-manager/fu-mm-utils.h
++++ b/plugins/modem-manager/fu-mm-utils.h
+@@ -10,14 +10,6 @@
+ #include "config.h"
+ #include <gudev/gudev.h>
+ 
+-#ifndef HAVE_GUDEV_232
+-#pragma clang diagnostic push
+-#pragma clang diagnostic ignored "-Wunused-function"
+-G_DEFINE_AUTOPTR_CLEANUP_FUNC(GUdevClient, g_object_unref)
+-G_DEFINE_AUTOPTR_CLEANUP_FUNC(GUdevDevice, g_object_unref)
+-#pragma clang diagnostic pop
+-#endif
+-
+ gboolean	fu_mm_utils_get_udev_port_info	(GUdevDevice	 *dev,
+ 						 gchar		**device_sysfs_path,
+ 						 gint		 *port_ifnum,
+diff --git a/plugins/nvme/fu-nvme-device.c b/plugins/nvme/fu-nvme-device.c
+index bd79dfb7..8e598010 100644
+--- a/plugins/nvme/fu-nvme-device.c
++++ b/plugins/nvme/fu-nvme-device.c
+@@ -23,13 +23,6 @@ struct _FuNvmeDevice {
+ 
+ G_DEFINE_TYPE (FuNvmeDevice, fu_nvme_device, FU_TYPE_UDEV_DEVICE)
+ 
+-#ifndef HAVE_GUDEV_232
+-#pragma clang diagnostic push
+-#pragma clang diagnostic ignored "-Wunused-function"
+-G_DEFINE_AUTOPTR_CLEANUP_FUNC(GUdevDevice, g_object_unref)
+-#pragma clang diagnostic pop
+-#endif
+-
+ static void
+ fu_nvme_device_to_string (FuDevice *device, guint idt, GString *str)
+ {
+diff --git a/plugins/thunderbolt-power/fu-plugin-thunderbolt-power.c b/plugins/thunderbolt-power/fu-plugin-thunderbolt-power.c
+index cdea3e63..bd13f74f 100644
+--- a/plugins/thunderbolt-power/fu-plugin-thunderbolt-power.c
++++ b/plugins/thunderbolt-power/fu-plugin-thunderbolt-power.c
+@@ -18,13 +18,6 @@
+ #define BOLT_DBUS_PATH		"/org/freedesktop/bolt"
+ #define BOLT_DBUS_INTERFACE	"org.freedesktop.bolt1.Power"
+ 
+-#ifndef HAVE_GUDEV_232
+-#pragma clang diagnostic push
+-#pragma clang diagnostic ignored "-Wunused-function"
+-G_DEFINE_AUTOPTR_CLEANUP_FUNC(GUdevDevice, g_object_unref)
+-#pragma clang diagnostic pop
+-#endif
+-
+ /* empirically measured amount of time for the TBT device to come and go */
+ #define TBT_NEW_DEVICE_TIMEOUT	2 /* s */
+ 
+diff --git a/plugins/thunderbolt/fu-plugin-thunderbolt.c b/plugins/thunderbolt/fu-plugin-thunderbolt.c
+index 8a12cf03..d73dd053 100644
+--- a/plugins/thunderbolt/fu-plugin-thunderbolt.c
++++ b/plugins/thunderbolt/fu-plugin-thunderbolt.c
+@@ -19,13 +19,6 @@
+ #include "fu-device-metadata.h"
+ #include "fu-thunderbolt-image.h"
+ 
+-#ifndef HAVE_GUDEV_232
+-#pragma clang diagnostic push
+-#pragma clang diagnostic ignored "-Wunused-function"
+-G_DEFINE_AUTOPTR_CLEANUP_FUNC(GUdevDevice, g_object_unref)
+-#pragma clang diagnostic pop
+-#endif
+-
+ #define TBT_NVM_RETRY_TIMEOUT				200	/* ms */
+ #define FU_PLUGIN_THUNDERBOLT_UPDATE_TIMEOUT		60000	/* ms */
+ 
+diff --git a/plugins/unifying/fu-unifying-runtime.c b/plugins/unifying/fu-unifying-runtime.c
+index 869b4dc8..d1e81c13 100644
+--- a/plugins/unifying/fu-unifying-runtime.c
++++ b/plugins/unifying/fu-unifying-runtime.c
+@@ -22,10 +22,6 @@ struct _FuUnifyingRuntime
+ 
+ G_DEFINE_TYPE (FuUnifyingRuntime, fu_unifying_runtime, FU_TYPE_UDEV_DEVICE)
+ 
+-#ifndef HAVE_GUDEV_232
+-G_DEFINE_AUTOPTR_CLEANUP_FUNC(GUdevDevice, g_object_unref)
+-#endif
+-
+ static void
+ fu_unifying_runtime_to_string (FuDevice *device, guint idt, GString *str)
+ {
+diff --git a/src/fu-udev-device.c b/src/fu-udev-device.c
+index 6461e88d..c0183ef6 100644
+--- a/src/fu-udev-device.c
++++ b/src/fu-udev-device.c
+@@ -44,13 +44,6 @@ typedef struct
+ 
+ G_DEFINE_TYPE_WITH_PRIVATE (FuUdevDevice, fu_udev_device, FU_TYPE_DEVICE)
+ 
+-#ifndef HAVE_GUDEV_232
+-#pragma clang diagnostic push
+-#pragma clang diagnostic ignored "-Wunused-function"
+-G_DEFINE_AUTOPTR_CLEANUP_FUNC(GUdevDevice, g_object_unref)
+-#pragma clang diagnostic pop
+-#endif
+-
+ enum {
+ 	PROP_0,
+ 	PROP_UDEV_DEVICE,
+diff --git a/src/fu-udev-device.h b/src/fu-udev-device.h
+index c156981f..5cdc4511 100644
+--- a/src/fu-udev-device.h
++++ b/src/fu-udev-device.h
+@@ -26,6 +26,14 @@ struct _FuUdevDeviceClass
+ 	gpointer	__reserved[29];
+ };
+ 
++#ifndef HAVE_GUDEV_232
++#pragma clang diagnostic push
++#pragma clang diagnostic ignored "-Wunused-function"
++G_DEFINE_AUTOPTR_CLEANUP_FUNC(GUdevClient, g_object_unref)
++G_DEFINE_AUTOPTR_CLEANUP_FUNC(GUdevDevice, g_object_unref)
++#pragma clang diagnostic pop
++#endif
++
+ FuUdevDevice	*fu_udev_device_new			(GUdevDevice	*udev_device);
+ GUdevDevice	*fu_udev_device_get_dev			(FuUdevDevice	*self);
+ const gchar	*fu_udev_device_get_device_file		(FuUdevDevice	*self);
+-- 
+2.23.0
+
