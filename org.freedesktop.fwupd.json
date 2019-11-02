@@ -41,8 +41,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://github.com/libusb/libusb/releases/download/v1.0.22/libusb-1.0.22.tar.bz2",
-          "sha256": "75aeb9d59a4fdb800d329a545c2e6799f732362193b465ea198f2aa275518157"
+          "url": "https://github.com/libusb/libusb/releases/download/v1.0.23/libusb-1.0.23.tar.bz2",
+          "sha256": "db11c06e958a82dac52cf3c65cb4dd2c3f339c8a988665110e0d24d19312ad8d"
         }
       ]
     },
@@ -184,8 +184,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://people.freedesktop.org/~hughsient/releases/libxmlb-0.1.11.tar.xz",
-          "sha256": "2c0f7e235ccc9f946430ee3dab7214d957a07334f159c7aa6421b24792b5a7f7"
+          "url": "https://people.freedesktop.org/~hughsient/releases/libxmlb-0.1.13.tar.xz",
+          "sha256": "24abe548800450ce097235a44a76536bd17a9c5b3bb1a8ee4393cdf3688e5996"
         }
       ]
     },
@@ -198,8 +198,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://www.freedesktop.org/software/libqmi/libqmi-1.22.4.tar.xz",
-          "sha256": "4c5b8e7bde4144ad875e9efaccd05bcc9b830c9a114df63aa2be8eb5d3caf9f1"
+          "url": "https://www.freedesktop.org/software/libqmi/libqmi-1.24.0.tar.xz",
+          "sha256": "aeb69f90c273467cce246176cba0967c6413f1995a976992770a597c4fe28c79"
         }
       ]
     },
@@ -211,8 +211,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://www.freedesktop.org/software/libmbim/libmbim-1.18.2.tar.xz",
-          "sha256": "7723f2ca2286c5286ffba7331cb4520099982e55355a7af6f45bdce6b5d39268"
+          "url": "https://www.freedesktop.org/software/libmbim/libmbim-1.20.0.tar.xz",
+          "sha256": "2cf7c6c7aa9e962a589f61bff2766035b61792ef961131a21fcbbe043f91a866"
         }
       ]
     },
@@ -236,8 +236,25 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://www.freedesktop.org/software/ModemManager/ModemManager-1.10.4.tar.xz",
-          "sha256": "fa556bb4ba1f1478e709b71151b4de8f7d136d80e51c64e887fc1fd8926cdc70"
+          "url": "https://www.freedesktop.org/software/ModemManager/ModemManager-1.10.8.tar.xz",
+          "sha256": "cbe174078dbdf3f746a55f0004353d3c27da2a31da553036d90fc7dc34a0169a"
+        }
+      ]
+    },
+    {
+      "name": "tpm2-tss",
+      "config-opts": [
+        "--disable-doxygen-doc",
+        "--with-udevrulesdir=/app/lib"
+      ],
+      "cleanup": [
+        "/lib/rules.d"
+      ],
+      "sources": [
+        {
+          "type": "archive",
+          "url": "https://github.com/tpm2-software/tpm2-tss/releases/download/2.3.1/tpm2-tss-2.3.1.tar.gz",
+          "sha256": "7096576c1946b85ec9c92b39e0ed3409ec01bdb97d7863ead033243d5433dee7"
         }
       ]
     },
@@ -246,7 +263,7 @@
       "buildsystem": "meson",
       "config-opts": [
         "-Dconsolekit=false",
-        "-Ddaemon=false",
+        "-Dbuild=standalone",
         "-Dgpg=false",
         "-Dgtkdoc=false",
         "-Dintrospection=false",
@@ -295,8 +312,12 @@
       "sources": [
           {
               "type": "archive",
-              "url": "https://people.freedesktop.org/~hughsient/releases/fwupd-1.2.10.tar.xz",
-              "sha256": "4bee2032da8e3b690ecdc9a8a5662ea9b8287f72ba557758aa5321128f7ed646"
+              "url": "https://people.freedesktop.org/~hughsient/releases/fwupd-1.3.3.tar.xz",
+              "sha256": "14ff660549b7cb7bdabc330868e00665f538cf666dee3fc982d47d8bfac61f5b"
+          },
+          {
+              "type": "patch",
+              "path": "0001-trivial-Fix-a-compile-error-with-older-versions-of-g.patch"
           }
       ]
     }
