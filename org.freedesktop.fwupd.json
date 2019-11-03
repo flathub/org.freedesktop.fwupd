@@ -1,7 +1,7 @@
 {
   "app-id": "org.freedesktop.fwupd",
   "runtime": "org.gnome.Platform",
-  "runtime-version": "3.32",
+  "runtime-version": "3.34",
   "branch": "stable",
   "sdk": "org.gnome.Sdk",
   "command": "/app/libexec/fwupd/fwupdtool",
@@ -32,7 +32,7 @@
     "/share/pkgconfig"
   ],
   "modules": [
-    "shared-modules/udev/udev-175.json",
+    "shared-modules/gudev/gudev.json",
     {
       "name": "libusb",
       "config-opts": [
@@ -80,6 +80,10 @@
           "type": "archive",
           "url": "https://github.com/rhboot/efivar/releases/download/37/efivar-37.tar.bz2",
           "sha256": "3c67feb93f901b98fbb897d5ca82931a6698b5bcd6ac34f0815f670d77747b9f"
+        },
+        {
+            "type": "patch",
+            "path": "efivar.patch"
         }
       ]
     },
@@ -314,10 +318,6 @@
               "type": "archive",
               "url": "https://people.freedesktop.org/~hughsient/releases/fwupd-1.3.3.tar.xz",
               "sha256": "14ff660549b7cb7bdabc330868e00665f538cf666dee3fc982d47d8bfac61f5b"
-          },
-          {
-              "type": "patch",
-              "path": "0001-trivial-Fix-a-compile-error-with-older-versions-of-g.patch"
           }
       ]
     }
