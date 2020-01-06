@@ -188,8 +188,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://people.freedesktop.org/~hughsient/releases/libxmlb-0.1.13.tar.xz",
-          "sha256": "24abe548800450ce097235a44a76536bd17a9c5b3bb1a8ee4393cdf3688e5996"
+          "url": "https://people.freedesktop.org/~hughsient/releases/libxmlb-0.1.14.tar.xz",
+          "sha256": "9128735d08d0326f48526fd11c4a44659f7995fae458bd7dbdf27460b842cc80"
         }
       ]
     },
@@ -316,8 +316,8 @@
       "sources": [
           {
               "type": "archive",
-              "url": "https://people.freedesktop.org/~hughsient/releases/fwupd-1.3.3.tar.xz",
-              "sha256": "14ff660549b7cb7bdabc330868e00665f538cf666dee3fc982d47d8bfac61f5b"
+              "url": "https://people.freedesktop.org/~hughsient/releases/fwupd-1.3.6.tar.xz",
+              "sha256": "8393c8471a0c797282d05e9dec292ffd39b2c1b775315af3915f66782d81d269"
           }
       ]
     }
