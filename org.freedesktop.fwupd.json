@@ -60,8 +60,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://people.freedesktop.org/~hughsient/releases/libgusb-0.3.0.tar.xz",
-          "sha256": "d8e7950f99b6ae4c3e9b8c65f3692b9635289e6cff8de40c4af41b2e9b348edc"
+          "url": "https://people.freedesktop.org/~hughsient/releases/libgusb-0.3.3.tar.xz",
+          "sha256": "f93942585b7dfe7628415e1d504d9f6cf2cc1c42f1df2c8f7aa104111068eb92"
         }
       ]
     },
@@ -202,8 +202,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://www.freedesktop.org/software/libqmi/libqmi-1.24.0.tar.xz",
-          "sha256": "aeb69f90c273467cce246176cba0967c6413f1995a976992770a597c4fe28c79"
+          "url": "https://www.freedesktop.org/software/libqmi/libqmi-1.24.4.tar.xz",
+          "sha256": "0316badec92ff32f51fe6278e6046968d2272a26608995deedd8e4afb563918a"
         }
       ]
     },
@@ -215,8 +215,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://www.freedesktop.org/software/libmbim/libmbim-1.20.0.tar.xz",
-          "sha256": "2cf7c6c7aa9e962a589f61bff2766035b61792ef961131a21fcbbe043f91a866"
+          "url": "https://www.freedesktop.org/software/libmbim/libmbim-1.22.0.tar.xz",
+          "sha256": "5c0778eb1cd12c3604523134e55183f5147b0cae71150e875b583768f7aa1f38"
         }
       ]
     },
@@ -240,8 +240,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://www.freedesktop.org/software/ModemManager/ModemManager-1.10.8.tar.xz",
-          "sha256": "cbe174078dbdf3f746a55f0004353d3c27da2a31da553036d90fc7dc34a0169a"
+          "url": "https://www.freedesktop.org/software/ModemManager/ModemManager-1.12.4.tar.xz",
+          "sha256": "852d61755e0c1a8d0c609b17192d742b324fdd2e513f3ed64b228befb859a95b"
         }
       ]
     },
@@ -257,8 +257,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://github.com/tpm2-software/tpm2-tss/releases/download/2.3.1/tpm2-tss-2.3.1.tar.gz",
-          "sha256": "7096576c1946b85ec9c92b39e0ed3409ec01bdb97d7863ead033243d5433dee7"
+          "url": "https://github.com/tpm2-software/tpm2-tss/releases/download/2.3.2/tpm2-tss-2.3.2.tar.gz",
+          "sha256": "82929a0611f39246e09202702a61b54c980ab694626c1f5823520ddf75024fa6"
         }
       ]
     },
@@ -316,8 +316,8 @@
       "sources": [
           {
               "type": "archive",
-              "url": "https://people.freedesktop.org/~hughsient/releases/fwupd-1.3.6.tar.xz",
-              "sha256": "8393c8471a0c797282d05e9dec292ffd39b2c1b775315af3915f66782d81d269"
+              "url": "https://people.freedesktop.org/~hughsient/releases/fwupd-1.3.7.tar.xz",
+              "sha256": "2038fd7aaf46c98d6e86335b62d3e9f2bf90b9ba7e66df2d51ab9609f9b0bf0a"
           }
       ]
     }
