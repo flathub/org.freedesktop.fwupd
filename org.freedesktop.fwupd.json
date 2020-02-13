@@ -127,8 +127,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://sourceforge.net/projects/gnu-efi/files/gnu-efi-3.0.9.tar.bz2",
-          "sha256": "6715ea7eae1c7e4fc5041034bd3f107ec2911962ed284a081e491646b12277f0"
+          "url": "https://sourceforge.net/projects/gnu-efi/files/gnu-efi-3.0.11.tar.bz2",
+          "sha256": "f28da792a2532e91e18e0101468811739a22cde9eee5eacfd0efb9bf3a61d6b9"
         }
       ]
     },
@@ -314,11 +314,15 @@
         done"
       ],
       "sources": [
-          {
-              "type": "archive",
-              "url": "https://people.freedesktop.org/~hughsient/releases/fwupd-1.3.7.tar.xz",
-              "sha256": "2038fd7aaf46c98d6e86335b62d3e9f2bf90b9ba7e66df2d51ab9609f9b0bf0a"
-          }
+        {
+          "type": "archive",
+          "url": "https://people.freedesktop.org/~hughsient/releases/fwupd-1.3.8.tar.xz",
+          "sha256": "1d49f33fd18af6e0cef630092abe4b48253841915b18cd83f9c40e23c6e50b92"
+        },
+        {
+          "type": "patch",
+          "path": "0001-uefi-Find-the-correct-lds-and-crt-name-when-specifyi.patch"
+        }
       ]
     }
   ]
