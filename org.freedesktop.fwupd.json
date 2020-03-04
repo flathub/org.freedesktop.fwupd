@@ -4,7 +4,7 @@
   "runtime-version": "3.34",
   "branch": "stable",
   "sdk": "org.gnome.Sdk",
-  "command": "/app/libexec/fwupd/fwupdtool",
+  "command": "/app/bin/fwupdtool",
   "finish-args": [
     "--device=all",
     "--filesystem=/boot",
@@ -316,12 +316,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://people.freedesktop.org/~hughsient/releases/fwupd-1.3.8.tar.xz",
-          "sha256": "1d49f33fd18af6e0cef630092abe4b48253841915b18cd83f9c40e23c6e50b92"
-        },
-        {
-          "type": "patch",
-          "path": "0001-uefi-Find-the-correct-lds-and-crt-name-when-specifyi.patch"
+          "url": "https://people.freedesktop.org/~hughsient/releases/fwupd-1.3.9.tar.xz",
+          "sha256": "66e446f9437c79b5efe59f1f398593d1e0ad1f29065e807c62cbb7c007aac740"
         }
       ]
     }
