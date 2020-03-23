@@ -263,6 +263,27 @@
       ]
     },
     {
+      "name": "libjcat",
+      "buildsystem": "meson",
+      "config-opts": [
+        "-Dintrospection=false",
+        "-Dgtkdoc=false",
+        "-Dtests=false",
+        "--sysconfdir=/app/etc",
+        "--localstatedir=/var/data"
+      ],
+      "cleanup": [
+        "/bin/jcat-tool"
+      ],
+      "sources": [
+        {
+          "type": "archive",
+          "url": "https://people.freedesktop.org/~hughsient/releases/libjcat-0.1.0.tar.xz",
+          "sha256": "ae85d3f49facb7b4174a3be0f9aabf6d26b7b0ec951c0b10573cface2c54bca7"
+        }
+      ]
+    },
+    {
       "name": "fwupd",
       "buildsystem": "meson",
       "config-opts": [
