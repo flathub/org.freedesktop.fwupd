@@ -48,8 +48,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://people.freedesktop.org/~hughsient/releases/libgusb-0.3.3.tar.xz",
-          "sha256": "f93942585b7dfe7628415e1d504d9f6cf2cc1c42f1df2c8f7aa104111068eb92"
+          "url": "https://people.freedesktop.org/~hughsient/releases/libgusb-0.3.5.tar.xz",
+          "sha256": "5b2a00c6997cc4b0133c5a5748a2e616e9e7504626922105b62aadced78e65df"
         }
       ]
     },
@@ -92,8 +92,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://github.com/dell/libsmbios/archive/v2.4.2.tar.gz",
-          "sha256": "ebfe18415e24bbec06d0a9ea1066c8dcd82982555373712713d7e194138650de"
+          "url": "https://github.com/dell/libsmbios/archive/v2.4.3.tar.gz",
+          "sha256": "36c36a0f6b59190d6b4fef11696886e4511091929a5eb7ae7cf5fea0c32d3f58"
         }
       ]
     },
@@ -115,8 +115,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://sourceforge.net/projects/gnu-efi/files/gnu-efi-3.0.11.tar.bz2",
-          "sha256": "f28da792a2532e91e18e0101468811739a22cde9eee5eacfd0efb9bf3a61d6b9"
+          "url": "https://sourceforge.net/projects/gnu-efi/files/gnu-efi-3.0.12.tar.bz2",
+          "sha256": "0196f2e1fd3c334b66e610a608a0e59233474c7a01bec7bc53989639aa327669"
         }
       ]
     },
@@ -176,8 +176,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://people.freedesktop.org/~hughsient/releases/libxmlb-0.1.15.tar.xz",
-          "sha256": "e9625e609d20c491f37d0ab41f4c6edb59bc4b042ae9ba374390e9ef71c6ab98"
+          "url": "https://people.freedesktop.org/~hughsient/releases/libxmlb-0.2.0.tar.xz",
+          "sha256": "d425c3296edf12cca8f947de8275213ae5a48c2cd9ef9d436a0beede04768920"
         }
       ]
     },
@@ -190,8 +190,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://www.freedesktop.org/software/libqmi/libqmi-1.24.4.tar.xz",
-          "sha256": "0316badec92ff32f51fe6278e6046968d2272a26608995deedd8e4afb563918a"
+          "url": "https://www.freedesktop.org/software/libqmi/libqmi-1.26.2.tar.xz",
+          "sha256": "133467b2fe0706850eb587c0103ae6e61b97ce6e2c440d66358f2b72b0db7b03"
         }
       ]
     },
@@ -203,8 +203,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://www.freedesktop.org/software/libmbim/libmbim-1.22.0.tar.xz",
-          "sha256": "5c0778eb1cd12c3604523134e55183f5147b0cae71150e875b583768f7aa1f38"
+          "url": "https://www.freedesktop.org/software/libmbim/libmbim-1.24.2.tar.xz",
+          "sha256": "32198c099987849c5f442d1cbf4b6e43e645cbdbe9cfdc197b19ddd63c6981e4"
         }
       ]
     },
@@ -228,8 +228,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://www.freedesktop.org/software/ModemManager/ModemManager-1.12.4.tar.xz",
-          "sha256": "852d61755e0c1a8d0c609b17192d742b324fdd2e513f3ed64b228befb859a95b"
+          "url": "https://www.freedesktop.org/software/ModemManager/ModemManager-1.14.0.tar.xz",
+          "sha256": "8976e2f890380d35144d4d9146bc225d926ae72c9b48d7e50c1dd9674d2bd079"
         }
       ]
     },
@@ -266,8 +266,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://people.freedesktop.org/~hughsient/releases/libjcat-0.1.2.tar.xz",
-          "sha256": "b54d58c3c587230356c0c456aa3170f1965f7bc550666a69182810efa3d301d3"
+          "url": "https://people.freedesktop.org/~hughsient/releases/libjcat-0.1.3.tar.xz",
+          "sha256": "8b8585cc34f1b2e87d21c6eab8a1081cf6aa45294339bb5fca8a8437a17d2b73"
         }
       ]
     },
@@ -325,8 +325,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://people.freedesktop.org/~hughsient/releases/fwupd-1.4.4.tar.xz",
-          "sha256": "d742d5f30b6018a936486c3e42f6f2542ed8724afe04f517eb7b14dda749d60f"
+          "url": "https://people.freedesktop.org/~hughsient/releases/fwupd-1.4.5.tar.xz",
+          "sha256": "bc1b625503d7e3ff73d7d69348b38e5337f40d60f6722d1820c4e2b530eff842"
         }
       ]
     }
