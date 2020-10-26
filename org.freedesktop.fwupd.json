@@ -176,8 +176,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://people.freedesktop.org/~hughsient/releases/libxmlb-0.2.0.tar.xz",
-          "sha256": "d425c3296edf12cca8f947de8275213ae5a48c2cd9ef9d436a0beede04768920"
+          "url": "https://people.freedesktop.org/~hughsient/releases/libxmlb-0.2.1.tar.xz",
+          "sha256": "619ec62bc309c077a0ae21535782e4d95df836538823afe3b7e754f428498654"
         }
       ]
     },
@@ -190,8 +190,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://www.freedesktop.org/software/libqmi/libqmi-1.26.2.tar.xz",
-          "sha256": "133467b2fe0706850eb587c0103ae6e61b97ce6e2c440d66358f2b72b0db7b03"
+          "url": "https://www.freedesktop.org/software/libqmi/libqmi-1.26.6.tar.xz",
+          "sha256": "a71963bb1097a42665287e40a9a36f95b8f9d6d6a4b7a5de22d660328af97cb9"
         }
       ]
     },
@@ -203,8 +203,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://www.freedesktop.org/software/libmbim/libmbim-1.24.2.tar.xz",
-          "sha256": "32198c099987849c5f442d1cbf4b6e43e645cbdbe9cfdc197b19ddd63c6981e4"
+          "url": "https://www.freedesktop.org/software/libmbim/libmbim-1.24.4.tar.xz",
+          "sha256": "dd488ee6176243a6adb27a5872897336272ea7bea33a3ad501ba268e5a58b285"
         }
       ]
     },
@@ -228,8 +228,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://www.freedesktop.org/software/ModemManager/ModemManager-1.14.0.tar.xz",
-          "sha256": "8976e2f890380d35144d4d9146bc225d926ae72c9b48d7e50c1dd9674d2bd079"
+          "url": "https://www.freedesktop.org/software/ModemManager/ModemManager-1.14.6.tar.xz",
+          "sha256": "783d5da925b2ca69f6233fcead691dd0f5cba06aa479d71495efdc07053fc0fd"
         }
       ]
     },
@@ -266,8 +266,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://people.freedesktop.org/~hughsient/releases/libjcat-0.1.3.tar.xz",
-          "sha256": "8b8585cc34f1b2e87d21c6eab8a1081cf6aa45294339bb5fca8a8437a17d2b73"
+          "url": "https://people.freedesktop.org/~hughsient/releases/libjcat-0.1.4.tar.xz",
+          "sha256": "7295a79a64bef646c9e7ff237eac21d299d72bc3e5d4678fd3e89dca9ccb712f"
         }
       ]
     },
@@ -277,11 +277,9 @@
       "config-opts": [
         "-Dconsolekit=false",
         "-Dbuild=standalone",
-        "-Dgpg=false",
         "-Dgtkdoc=false",
         "-Dintrospection=false",
         "-Dman=false",
-        "-Dpkcs7=false",
         "-Dsystemd=false",
         "-Dtests=false",
         "-Dplugin_modem_manager=true",
@@ -301,12 +299,14 @@
             },
             "arm": {
                 "config-opts": [
+                  "-Dplugin_msr=false",
                   "-Dplugin_dell=false",
                   "-Dplugin_uefi=false"
                 ]
             },
             "aarch64": {
                 "config-opts": [
+                  "-Dplugin_msr=false",
                   "-Dplugin_dell=false"
                 ]
             }
@@ -325,8 +325,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://people.freedesktop.org/~hughsient/releases/fwupd-1.4.5.tar.xz",
-          "sha256": "bc1b625503d7e3ff73d7d69348b38e5337f40d60f6722d1820c4e2b530eff842"
+          "url": "https://people.freedesktop.org/~hughsient/releases/fwupd-1.5.0.tar.xz",
+          "sha256": "712ce5ee3af87edfbaff991f352d887250293917aa3509899b3b659b0baff743"
         }
       ]
     }
