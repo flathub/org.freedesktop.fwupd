@@ -119,45 +119,6 @@
       ]
     },
     {
-      "name": "python3-olefile",
-      "only-arches": [
-        "aarch64",
-        "x86_64"
-      ],
-      "buildsystem": "simple",
-      "build-commands": [
-        "pip3 install --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} olefile"
-      ],
-      "sources": [
-        {
-          "type": "file",
-          "url": "https://pypi.python.org/packages/35/17/c15d41d5a8f8b98cc3df25eb00c5cee76193114c78e5674df6ef4ac92647/olefile-0.44.zip",
-          "sha256": "61f2ca0cd0aa77279eb943c07f607438edf374096b66332fae1ee64a6f0f73ad"
-        }
-      ]
-    },
-    {
-      "name": "python3-pillow",
-      "only-arches": [
-        "aarch64",
-        "x86_64"
-      ],
-      "buildsystem": "simple",
-      "build-commands": [
-        "pip3 install --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} Pillow"
-      ],
-      "cleanup": [
-        "/bin/*.py"
-      ],
-      "sources": [
-        {
-          "type": "file",
-          "url": "https://pypi.python.org/packages/93/73/66854f63b1941aad9af18a1de59f9cf95ad1a87c801540222e332f6688d7/Pillow-4.1.1.tar.gz",
-          "sha256": "00b6a5f28d00f720235a937ebc2f50f4292a5c7e2d6ab9a8b26153b625c4f431"
-        }
-      ]
-    },
-    {
       "name": "libxmlb",
       "buildsystem": "meson",
       "config-opts": [
@@ -168,14 +129,11 @@
         "--sysconfdir=/app/etc",
         "--localstatedir=/var/data"
       ],
-      "cleanup": [
-        "/libexec/xb-tool"
-      ],
       "sources": [
         {
           "type": "archive",
-          "url": "https://people.freedesktop.org/~hughsient/releases/libxmlb-0.3.0.tar.xz",
-          "sha256": "2d566631fdef99a6f4fc7b4d1ce88eafe19b092b8d436f73dc448307dc6dd98a"
+          "url": "https://people.freedesktop.org/~hughsient/releases/libxmlb-0.3.1.tar.xz",
+          "sha256": "750d98ca5e4ca5284da2ce6b78c55ee0e87433d1d1c88bc2106ca5521902fa64"
         }
       ]
     },
@@ -258,14 +216,31 @@
         "--sysconfdir=/app/etc",
         "--localstatedir=/var/data"
       ],
-      "cleanup": [
-        "/bin/jcat-tool"
+      "sources": [
+        {
+          "type": "archive",
+          "url": "https://people.freedesktop.org/~hughsient/releases/libjcat-0.1.7.tar.xz",
+          "sha256": "dbe74a0ccd27a974c24a9c585a9ccb3b9f881e04a8a41b505e0b77078caf4fe7"
+        }
+      ]
+    },
+    {
+      "name": "fwupd-efi",
+      "buildsystem": "meson",
+      "skip-arches": [
+        "i386",
+        "arm"
+      ],
+      "config-opts": [
+        "-Defi-includedir=/app/include/efi",
+        "-Defi-ldsdir=/app/lib",
+        "-Defi-libdir=/app/lib"
       ],
       "sources": [
         {
           "type": "archive",
-          "url": "https://people.freedesktop.org/~hughsient/releases/libjcat-0.1.4.tar.xz",
-          "sha256": "7295a79a64bef646c9e7ff237eac21d299d72bc3e5d4678fd3e89dca9ccb712f"
+          "url": "https://people.freedesktop.org/~hughsient/releases/fwupd-efi-1.0.tar.xz",
+          "sha256": "add34f160e90eddd60911eb132fb7504c4b5727153f9623160d421be6ca11099"
         }
       ]
     },
@@ -281,9 +256,6 @@
         "-Dsystemd=false",
         "-Dtests=false",
         "-Dplugin_modem_manager=true",
-        "-Defi-includedir=/app/include/efi",
-        "-Defi-ldsdir=/app/lib",
-        "-Defi-libdir=/app/lib",
         "--sysconfdir=/app/etc",
         "--localstatedir=/var/data"
       ],
@@ -323,8 +295,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://people.freedesktop.org/~hughsient/releases/fwupd-1.5.3.tar.xz",
-          "sha256": "06499404ae58af706ada445fbc2afa43be1d4fef6ad414d116ced4ca222fbe00"
+          "url": "https://people.freedesktop.org/~hughsient/releases/fwupd-1.6.0.tar.xz",
+          "sha256": "c4d9c5a870a60517470f7c4d2ae339eccb77bbca5b474c483984d0d4ece33f5e"
         }
       ]
     }
