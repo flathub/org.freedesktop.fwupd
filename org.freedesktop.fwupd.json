@@ -188,8 +188,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://www.freedesktop.org/software/libqmi/libqmi-1.26.6.tar.xz",
-          "sha256": "a71963bb1097a42665287e40a9a36f95b8f9d6d6a4b7a5de22d660328af97cb9"
+          "url": "https://www.freedesktop.org/software/libqmi/libqmi-1.28.2.tar.xz",
+          "sha256": "8c8c3ee719874d2529bce9b35b028fe435b36f003979a360d3ad0938449db783"
         }
       ]
     },
@@ -201,8 +201,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://www.freedesktop.org/software/libmbim/libmbim-1.24.4.tar.xz",
-          "sha256": "dd488ee6176243a6adb27a5872897336272ea7bea33a3ad501ba268e5a58b285"
+          "url": "https://www.freedesktop.org/software/libmbim/libmbim-1.24.6.tar.xz",
+          "sha256": "760465caaa1ccd699c14290e9791da456d5300dd11ebf4c1486151033e875dfd"
         }
       ]
     },
@@ -226,8 +226,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://www.freedesktop.org/software/ModemManager/ModemManager-1.14.8.tar.xz",
-          "sha256": "fe1a26ba51b4bda7abd09ad4dadedd87d8b8154809fc9d88e94f75fdfff19295"
+          "url": "https://www.freedesktop.org/software/ModemManager/ModemManager-1.16.4.tar.xz",
+          "sha256": "167e60b26fa05887f87a0b3fb54143d7845e6e4d8c2f2dd93afac059f41e7edf"
         }
       ]
     },
