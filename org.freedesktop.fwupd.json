@@ -67,12 +67,9 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://github.com/rhboot/efivar/releases/download/37/efivar-37.tar.bz2",
-          "sha256": "3c67feb93f901b98fbb897d5ca82931a6698b5bcd6ac34f0815f670d77747b9f"
-        },
-        {
-            "type": "patch",
-            "path": "efivar.patch"
+          "url": "https://github.com/rhboot/efivar/tarball/cff88dd96b9d43e2c5875a24ba6180b196890ded",
+          "dest-filename": "rhboot-efivar-37-96-gcff88dd.tar.gz",
+          "sha256": "b502f2d7ec415dacae6167f74a1370fe7153634324b324b301477fa943432d83"
         }
       ]
     },
