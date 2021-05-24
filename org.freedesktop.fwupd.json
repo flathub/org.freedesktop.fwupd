@@ -49,8 +49,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://people.freedesktop.org/~hughsient/releases/libgusb-0.3.6.tar.xz",
-          "sha256": "13277948a2ee06861234938089aea21bce6ad862f14c81a2efa85340ed701efd"
+          "url": "https://people.freedesktop.org/~hughsient/releases/libgusb-0.3.7.tar.xz",
+          "sha256": "da5f25d6873622689b3351486cbe028efc254403f646dd81225dfe8542d8c67d"
         }
       ]
     },
@@ -132,8 +132,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://people.freedesktop.org/~hughsient/releases/libxmlb-0.3.1.tar.xz",
-          "sha256": "750d98ca5e4ca5284da2ce6b78c55ee0e87433d1d1c88bc2106ca5521902fa64"
+          "url": "https://people.freedesktop.org/~hughsient/releases/libxmlb-0.3.2.tar.xz",
+          "sha256": "7b4d2e4223dc40f8fa767199d7d788021e997530e904b03d5b17cf4612b43b8b"
         }
       ]
     },
@@ -219,8 +219,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://people.freedesktop.org/~hughsient/releases/libjcat-0.1.7.tar.xz",
-          "sha256": "dbe74a0ccd27a974c24a9c585a9ccb3b9f881e04a8a41b505e0b77078caf4fe7"
+          "url": "https://people.freedesktop.org/~hughsient/releases/libjcat-0.1.8.tar.xz",
+          "sha256": "3daa69a66d1aabcdb524e9c3ffdc6b20b27e959182ccc7ad8aea72435e5cd0f3"
         }
       ]
     },
