@@ -1,0 +1,23 @@
+From 08c7714da056912db49d64a28e917d6ed7d6acc0 Mon Sep 17 00:00:00 2001
+From: Richard Hughes <richard@hughsie.com>
+Date: Mon, 7 Jun 2021 21:47:07 +0100
+Subject: [PATCH] trivial: Include the LVFS remotes for the standalone build
+ too
+
+---
+ data/remotes.d/meson.build | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/data/remotes.d/meson.build b/data/remotes.d/meson.build
+index 826a3c1d..142366ef 100644
+--- a/data/remotes.d/meson.build
++++ b/data/remotes.d/meson.build
+@@ -1,4 +1,4 @@
+-if build_daemon and get_option('lvfs')
++if build_standalone and get_option('lvfs')
+   install_data([
+       'lvfs.conf',
+       'lvfs-testing.conf',
+-- 
+2.31.1
+

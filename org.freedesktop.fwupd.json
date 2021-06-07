@@ -283,8 +283,7 @@
         }
       },
       "cleanup": [
-        "/etc/dbus-1/system.d/org.freedesktop.fwupd.conf",
-        "/share/fwupd/remotes.d/vendor"
+        "/etc/dbus-1/system.d/org.freedesktop.fwupd.conf"
       ],
       "post-install": [
         "for size in 64 128; do
@@ -297,6 +296,10 @@
           "type": "archive",
           "url": "https://people.freedesktop.org/~hughsient/releases/fwupd-1.6.0.tar.xz",
           "sha256": "c4d9c5a870a60517470f7c4d2ae339eccb77bbca5b474c483984d0d4ece33f5e"
+        },
+        {
+          "type": "patch",
+          "path": "0001-trivial-Include-the-LVFS-remotes-for-the-standalone-.patch"
         }
       ]
     }
