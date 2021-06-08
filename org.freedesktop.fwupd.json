@@ -299,6 +299,10 @@
         },
         {
           "type": "patch",
+          "path": "0001-Fix-regression-in-build-system.patch"
+        },
+        {
+          "type": "patch",
           "path": "0001-trivial-Include-the-LVFS-remotes-for-the-standalone-.patch"
         }
       ]
