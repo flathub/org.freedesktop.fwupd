@@ -250,7 +250,7 @@
       "config-opts": [
         "-Dconsolekit=false",
         "-Dbuild=standalone",
-        "-Dgtkdoc=false",
+        "-Ddocs=none",
         "-Dintrospection=false",
         "-Dman=false",
         "-Dsystemd=false",
@@ -294,16 +294,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://people.freedesktop.org/~hughsient/releases/fwupd-1.6.0.tar.xz",
-          "sha256": "c4d9c5a870a60517470f7c4d2ae339eccb77bbca5b474c483984d0d4ece33f5e"
-        },
-        {
-          "type": "patch",
-          "path": "0001-Fix-regression-in-build-system.patch"
-        },
-        {
-          "type": "patch",
-          "path": "0001-trivial-Include-the-LVFS-remotes-for-the-standalone-.patch"
+          "url": "https://people.freedesktop.org/~hughsient/releases/fwupd-1.6.1.tar.xz",
+          "sha256": "e75735cd75815a5b371c0db415bece28db555974bfa42f114bd45d8e529ecc47"
         }
       ]
     }
