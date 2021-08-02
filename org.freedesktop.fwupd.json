@@ -239,8 +239,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://people.freedesktop.org/~hughsient/releases/fwupd-efi-1.0.tar.xz",
-          "sha256": "add34f160e90eddd60911eb132fb7504c4b5727153f9623160d421be6ca11099"
+          "url": "https://people.freedesktop.org/~hughsient/releases/fwupd-efi-1.1.tar.xz",
+          "sha256": "5c01f1ccaf1d232e91d0947937af7bd9a32b1c020a99707d2f5f694b3b4e07f1"
         }
       ]
     },
@@ -294,8 +294,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://people.freedesktop.org/~hughsient/releases/fwupd-1.6.1.tar.xz",
-          "sha256": "e75735cd75815a5b371c0db415bece28db555974bfa42f114bd45d8e529ecc47"
+          "url": "https://people.freedesktop.org/~hughsient/releases/fwupd-1.6.2.tar.xz",
+          "sha256": "751fab6c8c205b1cea7c99b2667ab47d136951081cd93df5e0bea0fd2152e5f7"
         }
       ]
     }
