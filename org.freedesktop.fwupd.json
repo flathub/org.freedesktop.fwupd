@@ -49,8 +49,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://people.freedesktop.org/~hughsient/releases/libgusb-0.3.7.tar.xz",
-          "sha256": "da5f25d6873622689b3351486cbe028efc254403f646dd81225dfe8542d8c67d"
+          "url": "https://people.freedesktop.org/~hughsient/releases/libgusb-0.3.8.tar.xz",
+          "sha256": "6d7092ec4e8e4405e75d4c8799512f2c31cdb0d7a8381ee37d1015a4c4fc8407"
         }
       ]
     },
@@ -132,8 +132,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://people.freedesktop.org/~hughsient/releases/libxmlb-0.3.2.tar.xz",
-          "sha256": "7b4d2e4223dc40f8fa767199d7d788021e997530e904b03d5b17cf4612b43b8b"
+          "url": "https://people.freedesktop.org/~hughsient/releases/libxmlb-0.3.3.tar.xz",
+          "sha256": "931f59aa3635397ad580c8b46cad5caa9632997fa505b92bd6661d98b0b11bf6"
         }
       ]
     },
@@ -146,8 +146,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://www.freedesktop.org/software/libqmi/libqmi-1.28.2.tar.xz",
-          "sha256": "8c8c3ee719874d2529bce9b35b028fe435b36f003979a360d3ad0938449db783"
+          "url": "https://www.freedesktop.org/software/libqmi/libqmi-1.30.0.tar.xz",
+          "sha256": "c039cdb5d3522b45a50d2287ab6311cdc9f99d46a719a1ea4beb7591787b8a1b"
         }
       ]
     },
@@ -256,6 +256,7 @@
         "-Dsystemd=false",
         "-Dtests=false",
         "-Dplugin_modem_manager=true",
+        "-Dplugin_logitech_bulkcontroller=false",
         "--sysconfdir=/app/etc",
         "--localstatedir=/var/data"
       ],
@@ -294,8 +295,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://people.freedesktop.org/~hughsient/releases/fwupd-1.6.2.tar.xz",
-          "sha256": "751fab6c8c205b1cea7c99b2667ab47d136951081cd93df5e0bea0fd2152e5f7"
+          "url": "https://people.freedesktop.org/~hughsient/releases/fwupd-1.7.0.tar.xz",
+          "sha256": "6c4d5aa55abe8814810094f6e18db63a65539666e682aa9d050ce6028c2542c4"
         }
       ]
     }
