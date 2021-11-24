@@ -252,11 +252,14 @@
         "-Dbuild=standalone",
         "-Ddocs=none",
         "-Dintrospection=false",
+        "-Dfish_completion=false",
+        "-Dbash_completion=false",
         "-Dman=false",
         "-Dsystemd=false",
         "-Dtests=false",
         "-Dplugin_modem_manager=true",
         "-Dplugin_logitech_bulkcontroller=false",
+        "-Doffline=false",
         "--sysconfdir=/app/etc",
         "--localstatedir=/var/data"
       ],
@@ -295,8 +298,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://people.freedesktop.org/~hughsient/releases/fwupd-1.7.1.tar.xz",
-          "sha256": "ae56ceb44b786f21f54d133ac70bc5d9cb8cd4bda0167339c669a228da67fa3c"
+          "url": "https://people.freedesktop.org/~hughsient/releases/fwupd-1.7.2.tar.xz",
+          "sha256": "8632df69c3bafc59387cdcb517c3ce31a597a09026e44f5907d8384671b9f834"
         }
       ]
     }
