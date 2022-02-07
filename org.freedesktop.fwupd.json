@@ -1,7 +1,7 @@
 {
   "app-id": "org.freedesktop.fwupd",
   "runtime": "org.gnome.Platform",
-  "runtime-version": "40",
+  "runtime-version": "41",
   "branch": "stable",
   "sdk": "org.gnome.Sdk",
   "command": "/app/bin/fwupdtool",
@@ -49,8 +49,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://people.freedesktop.org/~hughsient/releases/libgusb-0.3.9.tar.xz",
-          "sha256": "1f51ebe8c91140cffbd1c4d58602c96b884170cae4c74f6f7e302a91d5b7c972"
+          "url": "https://people.freedesktop.org/~hughsient/releases/libgusb-0.3.10.tar.xz",
+          "sha256": "0eb0b9ab0f8bba0c59631c809c37b616ef34eb3c8e000b0b9b71cf11e4931bdc"
         }
       ]
     },
@@ -67,9 +67,13 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://github.com/rhboot/efivar/tarball/cff88dd96b9d43e2c5875a24ba6180b196890ded",
-          "dest-filename": "rhboot-efivar-37-96-gcff88dd.tar.gz",
-          "sha256": "b502f2d7ec415dacae6167f74a1370fe7153634324b324b301477fa943432d83"
+          "url": "https://github.com/rhboot/efivar/archive/refs/tags/38.tar.gz",
+          "dest-filename": "rhboot-efivar-38.tar.gz",
+          "sha256": "e3bbde37238bd47af1fcf270dc0ef1f4be030d86364c917b93669222ec52bbea"
+        },
+        {
+          "type": "patch",
+          "path": "0001-Do-not-build-the-man-pages.patch"
         }
       ]
     },
@@ -146,8 +150,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://www.freedesktop.org/software/libqmi/libqmi-1.30.0.tar.xz",
-          "sha256": "c039cdb5d3522b45a50d2287ab6311cdc9f99d46a719a1ea4beb7591787b8a1b"
+          "url": "https://www.freedesktop.org/software/libqmi/libqmi-1.30.2.tar.xz",
+          "sha256": "be01ece0ea2c2194cbea5744bf5aaf06c04ba5fb7ec7887a13116c76d114fedd"
         }
       ]
     },
@@ -159,8 +163,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://www.freedesktop.org/software/libmbim/libmbim-1.24.6.tar.xz",
-          "sha256": "760465caaa1ccd699c14290e9791da456d5300dd11ebf4c1486151033e875dfd"
+          "url": "https://www.freedesktop.org/software/libmbim/libmbim-1.26.2.tar.xz",
+          "sha256": "10c77bf5b5eb8c92ba80e9b519923ad9b898362bc8e1928e2bc9a17eeba649af"
         }
       ]
     },
@@ -184,8 +188,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://www.freedesktop.org/software/ModemManager/ModemManager-1.16.4.tar.xz",
-          "sha256": "167e60b26fa05887f87a0b3fb54143d7845e6e4d8c2f2dd93afac059f41e7edf"
+          "url": "https://www.freedesktop.org/software/ModemManager/ModemManager-1.18.4.tar.xz",
+          "sha256": "11fb970f63e2da88df4b6d8759e4ee649944c515244b979bf50a7a6df1d7f199"
         }
       ]
     },
@@ -239,8 +243,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://people.freedesktop.org/~hughsient/releases/fwupd-efi-1.1.tar.xz",
-          "sha256": "5c01f1ccaf1d232e91d0947937af7bd9a32b1c020a99707d2f5f694b3b4e07f1"
+          "url": "https://people.freedesktop.org/~hughsient/releases/fwupd-efi-1.2.tar.xz",
+          "sha256": "691c77f11c2101048d8dabaf63c6d0fe22cfad0e5d4322041c9babcebafceb3f"
         }
       ]
     },
@@ -298,8 +302,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://people.freedesktop.org/~hughsient/releases/fwupd-1.7.4.tar.xz",
-          "sha256": "0d3b8e9dd68b0ca67506c4a53294e5b1272d6e00a138eb7f726cd83a57e2a61b"
+          "url": "https://people.freedesktop.org/~hughsient/releases/fwupd-1.7.5.tar.xz",
+          "sha256": "1cc2b7f2ba01f07304f78922467d46ce1a563fa4beec460aad6b473de08bede1"
         }
       ]
     }
