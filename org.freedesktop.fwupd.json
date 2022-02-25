@@ -223,8 +223,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://people.freedesktop.org/~hughsient/releases/libjcat-0.1.9.tar.xz",
-          "sha256": "40af7412082df443e36e98f4e04b5863d68668f2853e6d7117bcbe17fe7ab17f"
+          "url": "https://people.freedesktop.org/~hughsient/releases/libjcat-0.1.10.tar.xz",
+          "sha256": "1e5a5bf99ed0ca6924ef37f549331e0a51b0642e16b5aac5a50d9651336bf6a6"
         }
       ]
     },
