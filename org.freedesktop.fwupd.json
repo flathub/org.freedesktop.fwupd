@@ -62,7 +62,7 @@
         "make install prefix=/app libdir=/app/lib"
       ],
       "cleanup": [
-          "/bin/efivar"
+          "/bin"
       ],
       "sources": [
         {
