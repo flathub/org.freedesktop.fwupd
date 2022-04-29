@@ -250,45 +250,40 @@
       ]
     },
     {
+      "name": "meson",
+      "buildsystem": "simple",
+      "build-commands": [
+        "python3 setup.py build",
+        "python3 setup.py install --prefix=/app --root=/"
+      ],
+      "sources": [
+        {
+          "type": "archive",
+          "url": "https://files.pythonhosted.org/packages/e1/5a/951f217a0cdd76501c33827ef2a5852fd1e1b3b294360f9efeac1b4b57a4/meson-0.62.1.tar.gz",
+          "sha256": "a0f5caa1e70da12d5e63aa6a9504273759b891af36c8d87de381a4ed1380e845"
+        }
+      ]
+    },
+    {
       "name": "fwupd",
       "buildsystem": "meson",
       "config-opts": [
-        "-Dconsolekit=false",
+        "-Dconsolekit=disabled",
         "-Dbuild=standalone",
         "-Ddocs=none",
-        "-Dintrospection=false",
+        "-Dintrospection=disabled",
         "-Dfish_completion=false",
         "-Dbash_completion=false",
         "-Dman=false",
-        "-Dsystemd=false",
+        "-Dsystemd=disabled",
         "-Dtests=false",
-        "-Dplugin_modem_manager=true",
-        "-Dplugin_logitech_bulkcontroller=false",
-        "-Doffline=false",
+        "-Doffline=disabled",
         "--sysconfdir=/app/etc",
         "--localstatedir=/var/data"
       ],
-      "build-options" : {
-        "arch": {
-            "i386": {
-                "config-opts": [
-                  "-Dplugin_dell=false",
-                  "-Dplugin_uefi=false"
-                ]
-            },
-            "arm": {
-                "config-opts": [
-                  "-Dplugin_msr=false",
-                  "-Dplugin_dell=false",
-                  "-Dplugin_uefi=false"
-                ]
-            },
-            "aarch64": {
-                "config-opts": [
-                  "-Dplugin_msr=false",
-                  "-Dplugin_dell=false"
-                ]
-            }
+      "build-options": {
+        "env": {
+          "PYTHONPATH": "/app/utils/lib/python3.9/site-packages:/app/lib/python3.9/site-packages:/usr/lib/python3.9/site-packages"
         }
       },
       "cleanup": [
@@ -303,8 +298,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://people.freedesktop.org/~hughsient/releases/fwupd-1.7.7.tar.xz",
-          "sha256": "414994d3acdf674a90f70a2da16da4e176a5ad11fe636e6ab3f0e1a49e062969"
+          "url": "https://people.freedesktop.org/~hughsient/releases/fwupd-1.8.0.tar.xz",
+          "sha256": "2c09622e7392a30b4e450434338cf670d43328c2f213f46c5ffff101689fae9b"
         }
       ]
     }
