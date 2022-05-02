@@ -278,6 +278,7 @@
         "-Dsystemd=disabled",
         "-Dtests=false",
         "-Doffline=disabled",
+        "--libdir=/app/lib",
         "--sysconfdir=/app/etc",
         "--localstatedir=/var/data"
       ],
