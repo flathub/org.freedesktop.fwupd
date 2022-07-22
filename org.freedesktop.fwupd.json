@@ -151,8 +151,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://www.freedesktop.org/software/libqmi/libqmi-1.30.6.tar.xz",
-          "sha256": "f19c43859d0ba9100ade45f8d1ea734c5d5e37af4932147ab784f45259aa11b7"
+          "url": "https://www.freedesktop.org/software/libqmi/libqmi-1.30.8.tar.xz",
+          "sha256": "862482ce9e3ad0bd65d264334ee311cdb94b9df2863b5b7136309b41b8ac1990"
         }
       ]
     },
@@ -189,8 +189,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://www.freedesktop.org/software/ModemManager/ModemManager-1.18.8.tar.xz",
-          "sha256": "e30dfc63a4e593bb3b7ba555346c3edc3c7e11d4d62efcde51ac438ef441b020"
+          "url": "https://www.freedesktop.org/software/ModemManager/ModemManager-1.18.10.tar.xz",
+          "sha256": "16255f8229eeeb2dfecb8dd1370360d46f1015ec85e6fba5c1cbd9f4371d65eb"
         }
       ]
     },
@@ -299,8 +299,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://people.freedesktop.org/~hughsient/releases/fwupd-1.8.2.tar.xz",
-          "sha256": "8baaf567d8e23600363a4ed3df1dcebbdff66593704c19ebd164ba78ea8598de"
+          "url": "https://people.freedesktop.org/~hughsient/releases/fwupd-1.8.3.tar.xz",
+          "sha256": "72222977ce8a8662511ffa3c0881566f6c458ec8d61d250d9466117d612238ec"
         }
       ]
     }
