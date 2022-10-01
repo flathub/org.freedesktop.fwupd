@@ -118,8 +118,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://sourceforge.net/projects/gnu-efi/files/gnu-efi-3.0.12.tar.bz2",
-          "sha256": "0196f2e1fd3c334b66e610a608a0e59233474c7a01bec7bc53989639aa327669"
+          "url": "https://sourceforge.net/projects/gnu-efi/files/gnu-efi-3.0.15.tar.bz2",
+          "sha256": "931a257b9c5c1ba65ff519f18373c438a26825f2db7866b163e96d1b168f20ea"
         }
       ]
     },
