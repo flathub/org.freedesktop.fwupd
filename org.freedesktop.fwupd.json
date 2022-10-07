@@ -2,9 +2,8 @@
   "app-id": "org.freedesktop.fwupd",
   "runtime": "org.gnome.Platform",
   "runtime-version": "42",
-  "branch": "stable",
   "sdk": "org.gnome.Sdk",
-  "command": "/app/bin/fwupdtool",
+  "command": "fwupdtool",
   "finish-args": [
     "--device=all",
     "--filesystem=/boot",
@@ -20,7 +19,6 @@
     "*.a",
     "*.la",
     "/include",
-    "/lib/debug",
     "/lib/girepository-1.0",
     "/lib/pkgconfig",
     "/lib/python3.7",
