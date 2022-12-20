@@ -1,7 +1,7 @@
 {
   "app-id": "org.freedesktop.fwupd",
   "runtime": "org.gnome.Platform",
-  "runtime-version": "42",
+  "runtime-version": "43",
   "sdk": "org.gnome.Sdk",
   "command": "fwupdtool",
   "finish-args": [
@@ -48,8 +48,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://people.freedesktop.org/~hughsient/releases/libgusb-0.4.1.tar.xz",
-          "sha256": "39ee01dab6a75f28de7c317e25d24159f511e1bf8e7465e275a0fbc483a48b63"
+          "url": "https://github.com/hughsie/libgusb/releases/download/0.4.3/libgusb-0.4.3.tar.xz",
+          "sha256": "2f75147cd01d1c08cbf7adc17449cbdb3e394bf752ab3cbf45740da7c3759247"
         }
       ]
     },
