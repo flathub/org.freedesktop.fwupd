@@ -274,6 +274,7 @@
         "-Dbash_completion=false",
         "-Dman=false",
         "-Dsystemd=disabled",
+        "-Dpolkit=disabled",
         "-Dtests=false",
         "-Doffline=disabled",
         "--libdir=/app/lib",
