@@ -48,8 +48,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://github.com/hughsie/libgusb/releases/download/0.4.3/libgusb-0.4.3.tar.xz",
-          "sha256": "2f75147cd01d1c08cbf7adc17449cbdb3e394bf752ab3cbf45740da7c3759247"
+          "url": "https://github.com/hughsie/libgusb/releases/download/0.4.5/libgusb-0.4.5.tar.xz",
+          "sha256": "bc8c6328289f057c8f73b07c1ba6251de96029787309f2672ca252ca90ace1b2"
         }
       ]
     },
@@ -135,8 +135,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://people.freedesktop.org/~hughsient/releases/libxmlb-0.3.10.tar.xz",
-          "sha256": "5e842233568b58e87071c396621479def17d48334b355d1ffb48373ad3717f6f"
+          "url": "https://github.com/hughsie/libxmlb/releases/download/0.3.11/libxmlb-0.3.11.tar.xz",
+          "sha256": "0bf704ca040b9ab371a62182d0d6417fe7ae38428e5f48846b87b99e74fe7c23"
         }
       ]
     },
@@ -298,8 +298,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://people.freedesktop.org/~hughsient/releases/fwupd-1.8.10.tar.xz",
-          "sha256": "bef35489d35d856f717a4b231159e4211ec2678a01422cd9251305b5952ae8ec"
+          "url": "https://github.com/fwupd/fwupd/releases/download/1.8.11/fwupd-1.8.11.tar.xz",
+          "sha256": "339879f8ca3799a4a55b2bbd835f8b33914ae11847e1eb6ab574c265ef7bbf70"
         }
       ]
     }
