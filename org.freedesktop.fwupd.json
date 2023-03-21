@@ -222,8 +222,23 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://people.freedesktop.org/~hughsient/releases/libjcat-0.1.12.tar.xz",
-          "sha256": "318d7e370b3cff4b03f2a4be541e6a309eb40de22c48ccbc0661659dfa7b0c92"
+          "url": "https://github.com/hughsie/libjcat/releases/download/0.1.13/libjcat-0.1.13.tar.xz",
+          "sha256": "1adcfffa627e51ad4328be38eaf87e2816c4318d0385e20fb1fd58e27cb352af"
+        }
+      ]
+    },
+    {
+      "name": "pefile",
+      "buildsystem": "simple",
+      "build-commands": [
+        "python3 setup.py build",
+        "python3 setup.py install --prefix=/app --root=/"
+      ],
+      "sources": [
+        {
+          "type": "archive",
+          "url": "https://files.pythonhosted.org/packages/78/c5/3b3c62223f72e2360737fd2a57c30e5b2adecd85e70276879609a7403334/pefile-2023.2.7.tar.gz",
+          "sha256": "82e6114004b3d6911c77c3953e3838654b04511b8b66e8583db70c65998017dc"
         }
       ]
     },
@@ -242,8 +257,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://people.freedesktop.org/~hughsient/releases/fwupd-efi-1.3.tar.xz",
-          "sha256": "d58b34e13c2159867c391260af4e2418eebf948d48dfab02ea472b5683ffaf59"
+          "url": "https://people.freedesktop.org/~hughsient/releases/fwupd-efi-1.4.tar.xz",
+          "sha256": "27ddbc0a4e3209543eab49e69f1a014eb9ed95f93ff51f966f31082d3b7bffbc"
         }
       ]
     },
@@ -298,8 +313,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://github.com/fwupd/fwupd/releases/download/1.8.11/fwupd-1.8.11.tar.xz",
-          "sha256": "339879f8ca3799a4a55b2bbd835f8b33914ae11847e1eb6ab574c265ef7bbf70"
+          "url": "https://github.com/fwupd/fwupd/releases/download/1.8.12/fwupd-1.8.12.tar.xz",
+          "sha256": "6b70e7e815ad661726da20c1c3737949f286e7a5a4fdbccb5330b85227da801b"
         }
       ]
     }
