@@ -330,6 +330,10 @@
           "type": "archive",
           "url": "https://github.com/fwupd/fwupd/releases/download/1.9.1/fwupd-1.9.1.tar.xz",
           "sha256": "33efa4e45cd813ebe516dcbd1c579c6304b0e9eade187197333deed09215028c"
+        },
+        {
+          "type": "patch",
+          "path": "0001-Ignore-the-immutable-flatpak-fwupd.conf-file-permiss.patch"
         }
       ]
     }
