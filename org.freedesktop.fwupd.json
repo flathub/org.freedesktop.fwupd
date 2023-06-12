@@ -48,8 +48,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://github.com/hughsie/libgusb/releases/download/0.4.5/libgusb-0.4.5.tar.xz",
-          "sha256": "bc8c6328289f057c8f73b07c1ba6251de96029787309f2672ca252ca90ace1b2"
+          "url": "https://github.com/hughsie/libgusb/releases/download/0.4.6/libgusb-0.4.6.tar.xz",
+          "sha256": "1b0422bdcd72183272ac42eec9398c5a0bc48a02f618fa3242c468cbbd003049"
         }
       ]
     },
@@ -222,8 +222,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://github.com/hughsie/libjcat/releases/download/0.1.13/libjcat-0.1.13.tar.xz",
-          "sha256": "1adcfffa627e51ad4328be38eaf87e2816c4318d0385e20fb1fd58e27cb352af"
+          "url": "https://github.com/hughsie/libjcat/releases/download/0.1.14/libjcat-0.1.14.tar.xz",
+          "sha256": "702706d75ff0c7253d0f5697bdd482e8c2cfe9909749fc7d68ddb364730b7383"
         }
       ]
     },
@@ -328,12 +328,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://github.com/fwupd/fwupd/releases/download/1.9.1/fwupd-1.9.1.tar.xz",
-          "sha256": "33efa4e45cd813ebe516dcbd1c579c6304b0e9eade187197333deed09215028c"
-        },
-        {
-          "type": "patch",
-          "path": "0001-Ignore-the-immutable-flatpak-fwupd.conf-file-permiss.patch"
+          "url": "https://github.com/fwupd/fwupd/releases/download/1.9.2/fwupd-1.9.2.tar.xz",
+          "sha256": "d70c04584e21215ab0ee48829fc4db233c9511d6f671ba31073432eb5cfdb9e7"
         }
       ]
     }
