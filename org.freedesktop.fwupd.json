@@ -299,6 +299,8 @@
         "-Dconsolekit=disabled",
         "-Dbuild=standalone",
         "-Ddocs=disabled",
+        "-Dpassim=disabled",
+        "-Dplugin_flashrom=disabled",
         "-Dintrospection=disabled",
         "-Dfish_completion=false",
         "-Dbash_completion=false",
@@ -328,8 +330,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://github.com/fwupd/fwupd/releases/download/1.9.4/fwupd-1.9.4.tar.xz",
-          "sha256": "7fb79aea6cefda0ad1cfc0ea68ff39e3f4c6d41b4801f5a693cb05cac6ceeb7e"
+          "url": "https://github.com/fwupd/fwupd/releases/download/1.9.5/fwupd-1.9.5.tar.xz",
+          "sha256": "201ec20538044749c96dbff708e52f7d79038de787b90a2762e76793080aa37c"
         }
       ]
     }
