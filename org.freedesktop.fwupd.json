@@ -1,7 +1,7 @@
 {
   "app-id": "org.freedesktop.fwupd",
   "runtime": "org.gnome.Platform",
-  "runtime-version": "43",
+  "runtime-version": "45",
   "sdk": "org.gnome.Sdk",
   "command": "fwupdtool",
   "finish-args": [
@@ -129,6 +129,7 @@
         "-Dgtkdoc=false",
         "-Dtests=false",
         "-Dstemmer=false",
+        "-Dcli=false",
         "--sysconfdir=/app/etc",
         "--localstatedir=/var/data"
       ],
@@ -216,6 +217,7 @@
         "-Dintrospection=false",
         "-Dgtkdoc=false",
         "-Dtests=false",
+        "-Dcli=false",
         "--sysconfdir=/app/etc",
         "--localstatedir=/var/data"
       ],
