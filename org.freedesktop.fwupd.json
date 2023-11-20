@@ -48,8 +48,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://github.com/hughsie/libgusb/releases/download/0.4.6/libgusb-0.4.6.tar.xz",
-          "sha256": "1b0422bdcd72183272ac42eec9398c5a0bc48a02f618fa3242c468cbbd003049"
+          "url": "https://github.com/hughsie/libgusb/releases/download/0.4.8/libgusb-0.4.8.tar.xz",
+          "sha256": "77aec51de289afe3bf5f8a1a36ae989d1a59748391097242949daccda9569ede"
         }
       ]
     },
@@ -73,28 +73,6 @@
         {
           "type": "patch",
           "path": "0001-Do-not-build-the-man-pages.patch"
-        }
-      ]
-    },
-    {
-      "name": "libsmbios_c",
-      "only-arches": [
-        "x86_64"
-      ],
-      "config-opts": [
-        "--disable-doxygen",
-        "--disable-graphviz",
-        "--disable-python"
-      ],
-      "cleanup": [
-        "/sbin/smbios*",
-        "/share/locale/*/LC_MESSAGES/libsmbios.mo"
-      ],
-      "sources": [
-        {
-          "type": "archive",
-          "url": "https://github.com/dell/libsmbios/archive/v2.4.3.tar.gz",
-          "sha256": "36c36a0f6b59190d6b4fef11696886e4511091929a5eb7ae7cf5fea0c32d3f58"
         }
       ]
     },
@@ -295,6 +273,19 @@
       ]
     },
     {
+      "name": "flathub-json",
+      "buildsystem": "simple",
+      "build-commands": [
+        "install -Dm644 flathub.json /app/flathub.json"
+      ],
+      "sources": [
+        {
+          "type": "file",
+          "path": "flathub.json"
+        }
+      ]
+    },
+    {
       "name": "fwupd",
       "buildsystem": "meson",
       "config-opts": [
@@ -332,8 +323,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://github.com/fwupd/fwupd/releases/download/1.9.8/fwupd-1.9.8.tar.xz",
-          "sha256": "6060075ce02ab11c66c96d6ca689c75f3abc909730c7279c5edd8cf5bfaed46a"
+          "url": "https://github.com/fwupd/fwupd/releases/download/1.9.9/fwupd-1.9.9.tar.xz",
+          "sha256": "dd31c25b916005376be7ba31aa8e8d8f14eb2acabc24482412aaa2c88b7796e6"
         }
       ]
     }
