@@ -1,0 +1,30 @@
+From dfaeff4f081c25ae7e739dc8b9059ce93f4b96e5 Mon Sep 17 00:00:00 2001
+From: Richard Hughes <richard@hughsie.com>
+Date: Thu, 8 Feb 2024 16:08:48 +0000
+Subject: [PATCH] trivial: Add a <developer> tag into the metainfo file
+
+Flathub now requires this.
+
+See https://www.freedesktop.org/software/appstream/docs/chap-Metadata.html#tag-developer
+---
+ data/org.freedesktop.fwupd.metainfo.xml | 4 ++++
+ 1 file changed, 4 insertions(+)
+
+diff --git a/data/org.freedesktop.fwupd.metainfo.xml b/data/org.freedesktop.fwupd.metainfo.xml
+index 411b4e1e4..8f5fe7071 100644
+--- a/data/org.freedesktop.fwupd.metainfo.xml
++++ b/data/org.freedesktop.fwupd.metainfo.xml
+@@ -25,6 +25,10 @@
+   <url type="translate">https://www.transifex.com/freedesktop/fwupd/</url>
+   <url type="vcs-browser">https://github.com/fwupd/fwupd</url>
+   <update_contact>richard_at_hughsie.com</update_contact>
++  <developer_name>The fwupd authors</developer_name>
++  <developer id="fwupd.org">
++    <name translatable="no">The fwupd authors</name>
++  </developer>
+   <translation type="gettext">fwupd</translation>
+   <content_rating type="oars-1.1">
+     <content_attribute id="social-info">moderate</content_attribute>
+-- 
+2.43.0
+
