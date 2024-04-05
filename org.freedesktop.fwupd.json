@@ -114,8 +114,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://github.com/hughsie/libxmlb/releases/download/0.3.15/libxmlb-0.3.15.tar.xz",
-          "sha256": "4cf605965d0e669db737da6443314664ea471807f2719a84550f2490670beea9"
+          "url": "https://github.com/hughsie/libxmlb/releases/download/0.3.17/libxmlb-0.3.17.tar.xz",
+          "sha256": "bdaf38779646e436cba73caf2bdc1ea07226e6ce418a01800595cd4702cc3caa"
         }
       ]
     },
@@ -323,8 +323,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://github.com/fwupd/fwupd/releases/download/1.9.15/fwupd-1.9.15.tar.xz",
-          "sha256": "6a69667d999eb4591293796351f163074dddb1dae8a5b6ae00cdc6098a856da2"
+          "url": "https://github.com/fwupd/fwupd/releases/download/1.9.16/fwupd-1.9.16.tar.xz",
+          "sha256": "adcafc8697bbf6ccc742fa3ce62457d3ed76b5807c068d5ea688f1ab698927f7"
         }
       ]
     }
