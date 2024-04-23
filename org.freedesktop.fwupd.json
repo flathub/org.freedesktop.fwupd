@@ -1,7 +1,7 @@
 {
   "app-id": "org.freedesktop.fwupd",
   "runtime": "org.gnome.Platform",
-  "runtime-version": "45",
+  "runtime-version": "46",
   "sdk": "org.gnome.Sdk",
   "command": "fwupdtool",
   "finish-args": [
@@ -48,8 +48,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://github.com/hughsie/libgusb/releases/download/0.4.8/libgusb-0.4.8.tar.xz",
-          "sha256": "77aec51de289afe3bf5f8a1a36ae989d1a59748391097242949daccda9569ede"
+          "url": "https://github.com/hughsie/libgusb/releases/download/0.4.9/libgusb-0.4.9.tar.xz",
+          "sha256": "9df5ef301d6a4b361002aa52cce1165a87a89744055879bdbab31e7e86f1e846"
         }
       ]
     },
@@ -114,8 +114,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://github.com/hughsie/libxmlb/releases/download/0.3.17/libxmlb-0.3.17.tar.xz",
-          "sha256": "bdaf38779646e436cba73caf2bdc1ea07226e6ce418a01800595cd4702cc3caa"
+          "url": "https://github.com/hughsie/libxmlb/releases/download/0.3.19/libxmlb-0.3.19.tar.xz",
+          "sha256": "0a3ec258b12dbf10e5fe840b2421c84137eb7cc1b09c3de6210f3f7d51733733"
         }
       ]
     },
@@ -323,8 +323,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://github.com/fwupd/fwupd/releases/download/1.9.16/fwupd-1.9.16.tar.xz",
-          "sha256": "adcafc8697bbf6ccc742fa3ce62457d3ed76b5807c068d5ea688f1ab698927f7"
+          "url": "https://github.com/fwupd/fwupd/releases/download/1.9.18/fwupd-1.9.18.tar.xz",
+          "sha256": "4e554f77a8a73383a41d5637b62e6c8a8936e66cd1d18585baf29d7fe47fc4d7"
         }
       ]
     }
