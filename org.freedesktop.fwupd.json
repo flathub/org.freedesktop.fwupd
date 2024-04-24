@@ -83,6 +83,9 @@
         "x86_64"
       ],
       "buildsystem": "simple",
+      "build-options": {
+        "ldflags-override": true
+      },
       "build-commands": [
         "make",
         "make PREFIX=/app install"
@@ -94,8 +97,12 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://sourceforge.net/projects/gnu-efi/files/gnu-efi-3.0.15.tar.bz2",
-          "sha256": "931a257b9c5c1ba65ff519f18373c438a26825f2db7866b163e96d1b168f20ea"
+          "url": "https://sourceforge.net/projects/gnu-efi/files/gnu-efi-3.0.18.tar.bz2",
+          "sha256": "7f212c96ee66547eeefb531267b641e5473d7d8529f0bd8ccdefd33cf7413f5c"
+        },
+        {
+          "type": "patch",
+          "path": "gnu-efi-no-relro.patch"
         }
       ]
     },
@@ -244,6 +251,9 @@
         "i386",
         "arm"
       ],
+      "build-options": {
+        "ldflags-override": true
+      },
       "config-opts": [
         "-Defi-includedir=/app/include/efi",
         "-Defi-ldsdir=/app/lib",
@@ -252,8 +262,12 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://people.freedesktop.org/~hughsient/releases/fwupd-efi-1.4.tar.xz",
-          "sha256": "27ddbc0a4e3209543eab49e69f1a014eb9ed95f93ff51f966f31082d3b7bffbc"
+          "url": "https://people.freedesktop.org/~hughsient/releases/fwupd-efi-1.5.tar.xz",
+          "sha256": "45d2a77931b362416dec2636dabf4eff0d1da10bc1ccca1ac980e832fedbba12"
+        },
+        {
+          "type": "patch",
+          "path": "fwupd-efi-no-relro.patch"
         }
       ]
     },
