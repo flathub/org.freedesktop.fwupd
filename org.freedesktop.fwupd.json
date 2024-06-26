@@ -287,19 +287,6 @@
       ]
     },
     {
-      "name": "flathub-json",
-      "buildsystem": "simple",
-      "build-commands": [
-        "install -Dm644 flathub.json /app/flathub.json"
-      ],
-      "sources": [
-        {
-          "type": "file",
-          "path": "flathub.json"
-        }
-      ]
-    },
-    {
       "name": "fwupd",
       "buildsystem": "meson",
       "config-opts": [
