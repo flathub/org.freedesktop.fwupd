@@ -324,8 +324,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://github.com/fwupd/fwupd/releases/download/1.9.23/fwupd-1.9.23.tar.xz",
-          "sha256": "bf1d55ed502e2b38e5dff4f6103f87130752401038afb034cddc99330aafba57"
+          "url": "https://github.com/fwupd/fwupd/releases/download/1.9.25/fwupd-1.9.25.tar.xz",
+          "sha256": "a1d484778ae87c69b38f417659b33fe3d689373ce0831d1f95617b8aa76e8c37"
         }
       ]
     }
