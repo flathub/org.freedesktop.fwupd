@@ -272,6 +272,17 @@
       ]
     },
     {
+      "name": "libcbor",
+      "buildsystem": "cmake",
+      "sources": [
+        {
+          "type": "archive",
+          "url": "https://github.com/PJK/libcbor/archive/refs/tags/v0.11.0.tar.gz",
+          "sha256": "89e0a83d16993ce50651a7501355453f5250e8729dfc8d4a251a78ea23bb26d7"
+        }
+      ]
+    },
+    {
       "name": "meson",
       "buildsystem": "simple",
       "build-commands": [
@@ -281,8 +292,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://files.pythonhosted.org/packages/e1/5a/951f217a0cdd76501c33827ef2a5852fd1e1b3b294360f9efeac1b4b57a4/meson-0.62.1.tar.gz",
-          "sha256": "a0f5caa1e70da12d5e63aa6a9504273759b891af36c8d87de381a4ed1380e845"
+          "url": "https://files.pythonhosted.org/packages/34/e8/bb0e264882a42f5d5acae869d5980f298ff9c298d844e18fd1ac009ce7e9/meson-1.5.2.tar.gz",
+          "sha256": "f955e09ab0d71ef180ae85df65991d58ed8430323de7d77a37e11c9ea630910b"
         }
       ]
     },
@@ -302,7 +313,7 @@
         "-Dsystemd=disabled",
         "-Dpolkit=disabled",
         "-Dtests=false",
-        "-Doffline=disabled",
+        "-Dvendor_ids_dir=/app/share/hwdata",
         "--libdir=/app/lib",
         "--sysconfdir=/app/etc",
         "--localstatedir=/var/data"
@@ -324,8 +335,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://github.com/fwupd/fwupd/releases/download/1.9.25/fwupd-1.9.25.tar.xz",
-          "sha256": "a1d484778ae87c69b38f417659b33fe3d689373ce0831d1f95617b8aa76e8c37"
+          "url": "https://github.com/fwupd/fwupd/releases/download/2.0.0/fwupd-2.0.0.tar.xz",
+          "sha256": "60a62b850e2c3a818f3178cb1de0f632b1e04c6ab07c02483af398940713548a"
         }
       ]
     }
