@@ -32,50 +32,7 @@
     "/share/pkgconfig"
   ],
   "modules": [
-    "shared-modules/gudev/gudev.json",
     "shared-modules/libusb/libusb.json",
-    {
-      "name": "gusb",
-      "buildsystem": "meson",
-      "config-opts": [
-        "-Ddocs=false",
-        "-Dvapi=false",
-        "-Dtests=false"
-      ],
-      "cleanup": [
-        "/bin/gusbcmd"
-      ],
-      "sources": [
-        {
-          "type": "archive",
-          "url": "https://github.com/hughsie/libgusb/releases/download/0.4.9/libgusb-0.4.9.tar.xz",
-          "sha256": "9df5ef301d6a4b361002aa52cce1165a87a89744055879bdbab31e7e86f1e846"
-        }
-      ]
-    },
-    {
-      "name": "efivar",
-      "buildsystem": "simple",
-      "build-commands": [
-        "make prefix=/app libdir=/app/lib",
-        "make install prefix=/app libdir=/app/lib"
-      ],
-      "cleanup": [
-          "/bin"
-      ],
-      "sources": [
-        {
-          "type": "archive",
-          "url": "https://github.com/rhboot/efivar/archive/refs/tags/38.tar.gz",
-          "dest-filename": "rhboot-efivar-38.tar.gz",
-          "sha256": "e3bbde37238bd47af1fcf270dc0ef1f4be030d86364c917b93669222ec52bbea"
-        },
-        {
-          "type": "patch",
-          "path": "0001-Do-not-build-the-man-pages.patch"
-        }
-      ]
-    },
     {
       "name": "gnu-efi",
       "only-arches": [
