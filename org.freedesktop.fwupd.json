@@ -326,21 +326,6 @@
             ]
         },
         {
-            "name": "meson",
-            "buildsystem": "simple",
-            "build-commands": [
-                "python3 setup.py build",
-                "python3 setup.py install --prefix=/app --root=/"
-            ],
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://files.pythonhosted.org/packages/34/e8/bb0e264882a42f5d5acae869d5980f298ff9c298d844e18fd1ac009ce7e9/meson-1.5.2.tar.gz",
-                    "sha256": "f955e09ab0d71ef180ae85df65991d58ed8430323de7d77a37e11c9ea630910b"
-                }
-            ]
-        },
-        {
             "name": "flashrom",
             "buildsystem": "meson",
             "config-opts": [
