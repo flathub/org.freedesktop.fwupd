@@ -370,11 +370,6 @@
                 "--sysconfdir=/app/etc",
                 "--localstatedir=/var/data"
             ],
-            "build-options": {
-                "env": {
-                    "PYTHONPATH": "/app/utils/lib/python3.9/site-packages:/app/lib/python3.9/site-packages:/usr/lib/python3.9/site-packages"
-                }
-            },
             "cleanup": [
                 "/etc/dbus-1/system.d/org.freedesktop.fwupd.conf"
             ],
