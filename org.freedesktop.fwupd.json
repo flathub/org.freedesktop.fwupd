@@ -1,7 +1,7 @@
 {
     "app-id": "org.freedesktop.fwupd",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "48",
+    "runtime-version": "49",
     "sdk": "org.gnome.Sdk",
     "command": "fwupdtool",
     "finish-args": [
@@ -21,7 +21,6 @@
         "/include",
         "/lib/girepository-1.0",
         "/lib/pkgconfig",
-        "/lib/python3.7",
         "/share/bash-completion",
         "/share/dbus-1/system-services",
         "/share/gir-1.0",
@@ -32,7 +31,6 @@
         "/share/pkgconfig"
     ],
     "modules": [
-        "shared-modules/libusb/libusb.json",
         {
             "name": "gnu-efi",
             "only-arches": [
