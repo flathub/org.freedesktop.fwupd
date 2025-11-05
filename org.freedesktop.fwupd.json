@@ -52,8 +52,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://sourceforge.net/projects/gnu-efi/files/gnu-efi-3.0.18.tar.bz2",
-                    "sha256": "7f212c96ee66547eeefb531267b641e5473d7d8529f0bd8ccdefd33cf7413f5c",
+                    "url": "https://github.com/ncroxon/gnu-efi/archive/refs/tags/3.0.19.tar.gz",
+                    "sha256": "e2ae35d4bdab887aeb4fd2ee721aa8c3d39bbc50518c83800affa49b98dd9ce8",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 1202,
@@ -61,7 +61,7 @@
                             "<": "4.0.0"
                         },
                         "stable-only": true,
-                        "url-template": "https://sourceforge.net/projects/gnu-efi/files/gnu-efi-3.0.18.tar.bz2"
+                        "url-template": "https://github.com/ncroxon/gnu-efi/archive/refs/tags/$version.tar.gz"
                     }
                 },
                 {
