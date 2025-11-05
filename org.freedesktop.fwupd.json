@@ -96,7 +96,48 @@
             ]
         },
         {
+            "name": "libmbim",
+            "buildsystem": "meson",
+            "cleanup": [
+                "/bin"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://gitlab.freedesktop.org/mobile-broadband/libmbim/-/archive/1.32.0/libmbim-1.32.0.tar.gz",
+                    "sha256": "7eca9f5af2eecfdb5e3a2a865a7f29d0ac9532ab187a9c6adce4d85f897eb385",
+                    "x-checker-data": {
+                        "type": "anitya",
+                        "project-id": 7308,
+                        "stable-only": true,
+                        "url-template": "https://gitlab.freedesktop.org/mobile-broadband/libmbim/-/archive/$version/libmbim-$version.tar.gz"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "libqrtr",
+            "buildsystem": "meson",
+            "cleanup": [
+                "/bin"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://gitlab.freedesktop.org/mobile-broadband/libqrtr-glib/-/archive/1.2.2/libqrtr-glib-1.2.2.tar.gz",
+                    "sha256": "c5cdf5ea91cbd2cf2758b2896064c7b1dfe7156063267df905f957ac69b6b763",
+                    "x-checker-data": {
+                        "type": "anitya",
+                        "project-id": 192056,
+                        "stable-only": true,
+                        "url-template": "https://gitlab.freedesktop.org/mobile-broadband/libqrtr-glib/-/archive/$version/libqrtr-glib-$version.tar.gz"
+                    }
+                }
+            ]
+        },
+        {
             "name": "libqmi",
+            "buildsystem": "meson",
             "cleanup": [
                 "/bin",
                 "/libexec/qmi-proxy"
@@ -104,42 +145,24 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://www.freedesktop.org/software/libqmi/libqmi-1.30.8.tar.xz",
-                    "sha256": "862482ce9e3ad0bd65d264334ee311cdb94b9df2863b5b7136309b41b8ac1990",
+                    "url": "https://gitlab.freedesktop.org/mobile-broadband/libqmi/-/archive/1.36.0/libqmi-1.36.0.tar.gz",
+                    "sha256": "e254fafdd916a78a27126e6d72ae436662487f59c7de84d4d40286059af89093",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 7307,
                         "stable-only": true,
-                        "url-template": "https://www.freedesktop.org/software/libqmi/libqmi-$version.tar.xz"
-                    }
-                }
-            ]
-        },
-        {
-            "name": "libmbim",
-            "cleanup": [
-                "/bin"
-            ],
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://www.freedesktop.org/software/libmbim/libmbim-1.26.4.tar.xz",
-                    "sha256": "f688cec4c4586a17575f5e327448ce62f2000ef6a07c9e4589873d4a68568ad9",
-                    "x-checker-data": {
-                        "type": "anitya",
-                        "project-id": 7308,
-                        "stable-only": true,
-                        "url-template": "https://www.freedesktop.org/software/libmbim/libmbim-$version.tar.xz"
+                        "url-template": "https://gitlab.freedesktop.org/mobile-broadband/libqmi/-/archive/$version/libqmi-$version.tar.gz"
                     }
                 }
             ]
         },
         {
             "name": "ModemManager",
+            "buildsystem": "meson",
             "config-opts": [
-                "--without-udev",
-                "--with-systemdsystemunitdir=/app/lib/systemd",
-                "--with-udev-base-dir=/app/lib"
+                "-Dudev=false",
+                "-Dsystemdsystemunitdir=/app/lib/systemd/system",
+                "-Dudevdir=/app/lib/udev"
             ],
             "cleanup": [
                 "/bin/mmcli",
@@ -154,13 +177,13 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://www.freedesktop.org/software/ModemManager/ModemManager-1.18.12.tar.xz",
-                    "sha256": "b464e4925d955a6ca86dd08616e763b26ae46d7fd37dbe281678e34065b1e430",
+                    "url": "https://gitlab.freedesktop.org/mobile-broadband/ModemManager/-/archive/1.24.2/ModemManager-1.24.2.tar.gz",
+                    "sha256": "fbc75adcc0d7b0565f256e7ff4e8872b0a37c4413ff576665f7470932d9c1b68",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 7306,
                         "stable-only": true,
-                        "url-template": "https://www.freedesktop.org/software/ModemManager/ModemManager-$version.tar.xz"
+                        "url-template": "https://gitlab.freedesktop.org/mobile-broadband/ModemManager/-/archive/$version/ModemManager-$version.tar.gz"
                     }
                 }
             ]
