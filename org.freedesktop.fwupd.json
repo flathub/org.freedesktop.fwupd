@@ -124,8 +124,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://gitlab.freedesktop.org/mobile-broadband/libqrtr-glib/-/archive/1.2.2/libqrtr-glib-1.2.2.tar.gz",
-                    "sha256": "c5cdf5ea91cbd2cf2758b2896064c7b1dfe7156063267df905f957ac69b6b763",
+                    "url": "https://gitlab.freedesktop.org/mobile-broadband/libqrtr-glib/-/archive/1.4.0/libqrtr-glib-1.4.0.tar.gz",
+                    "sha256": "9e5f988c6005af347f6d0ac95c872e473c9c10c3ec3714ee0b73d896db7d5766",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 192056,
@@ -145,8 +145,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://gitlab.freedesktop.org/mobile-broadband/libqmi/-/archive/1.36.0/libqmi-1.36.0.tar.gz",
-                    "sha256": "e254fafdd916a78a27126e6d72ae436662487f59c7de84d4d40286059af89093",
+                    "url": "https://gitlab.freedesktop.org/mobile-broadband/libqmi/-/archive/1.38.0/libqmi-1.38.0.tar.gz",
+                    "sha256": "8ee3b3a9002f2b45c825deade85710db006e01674f5f9359d351c192cc926015",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 7307,
