@@ -63,6 +63,10 @@
                 {
                     "type": "patch",
                     "path": "gnu-efi-no-relro.patch"
+                },
+                {
+                    "type": "patch",
+                    "path": "0001-Fix-objcopy-t.so-file-format-not-recognized.patch"
                 }
             ]
         },
