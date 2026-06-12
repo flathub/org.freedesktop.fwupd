@@ -206,30 +206,6 @@
             ]
         },
         {
-            "name": "libjcat",
-            "buildsystem": "meson",
-            "config-opts": [
-                "-Dintrospection=false",
-                "-Dgtkdoc=false",
-                "-Dtests=false",
-                "-Dcli=false",
-                "--sysconfdir=/app/etc",
-                "--localstatedir=/var/data"
-            ],
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://github.com/hughsie/libjcat/releases/download/0.2.6/libjcat-0.2.6.tar.xz",
-                    "sha256": "d54ad936ceb654e99f59b0227e4d1974b858970d250d98c6484abcfdc8334722",
-                    "x-checker-data": {
-                        "type": "anitya",
-                        "project-id": 229583,
-                        "url-template": "https://github.com/hughsie/libjcat/releases/download/$version/libjcat-$version.tar.xz"
-                    }
-                }
-            ]
-        },
-        {
             "name": "python3-pefile",
             "buildsystem": "simple",
             "build-commands": [
@@ -299,38 +275,12 @@
             ]
         },
         {
-            "name": "flashrom",
-            "buildsystem": "meson",
-            "config-opts": [
-                "-Dclassic_cli=disabled",
-                "-Dich_descriptors_tool=disabled",
-                "-Dbash_completion=disabled",
-                "-Dtests=disabled",
-                "-Dman-pages=disabled",
-                "-Ddocumentation=disabled"
-            ],
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://github.com/flashrom/flashrom/archive/refs/tags/v1.7.0.tar.gz",
-                    "sha256": "c5a8892158bd749aadfee6e114eec268130cdd8c2027fd1ddf44273755b07b59",
-                    "x-checker-data": {
-                        "type": "anitya",
-                        "project-id": 10202,
-                        "stable-only": true,
-                        "url-template": "https://github.com/flashrom/flashrom/archive/refs/tags/v$version.tar.gz"
-                    }
-                }
-            ]
-        },
-        {
             "name": "fwupd",
             "buildsystem": "meson",
             "config-opts": [
                 "-Dbuild=standalone",
                 "-Ddocs=disabled",
                 "-Dpassim=disabled",
-                "-Dplugin_flashrom=enabled",
                 "-Dintrospection=disabled",
                 "-Dfish_completion=false",
                 "-Dbash_completion=false",
